@@ -1,0 +1,2 @@
+PolicyExecTime,EnvExecTime,ProcessExecTime,AbsLearnSignal,Iteration,AverageDiscountedReturn,AverageReturn,ExplainedVariance,NumTrajs,Entropy,Perplexity,StdReturn,MaxReturn,MinReturn,AveragePolicyStd,LossBefore,LossAfter,MeanKLBefore,MeanKL,dLoss,Time,ItrTime
+0.5619411468505859,1.3403866291046143,0.07245278358459473,0.691050582743,0,-46.8908923843,-378.377724738,4.10528278039e-11,5,8.51363,4982.22,77.7253145894,-289.090530418,-499.524420295,1.0,-9.34601e-09,-0.0629385,0.0,0.0099902,0.0629385,3.254915237426758,3.254901647567749

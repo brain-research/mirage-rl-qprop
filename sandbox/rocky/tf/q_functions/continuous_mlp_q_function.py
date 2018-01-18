@@ -134,8 +134,13 @@ class ContinuousMLPQFunction(QFunction, LayersPowered, Serializable):
             e_qvals = self.get_e_qval_sym(obs_var, policy, deterministic=True, **kwargs)
             return qvals - e_qvals
         else:
+            """
             qvals, action0 = self._get_e_qval_sym(obs_var, policy, deterministic=True, **kwargs)
             # use first-order Taylor expansion
             qprimes = tf.gradients(qvals, action0)[0]
             deltas = action_var - action0
             return tf.reduce_sum(deltas * qprimes, 1)
+            """
+            # Just use zero-order Taylor expansion (aka just the constant qvals)
+            qvals, action0 = self._get_e_qval_sym(obs_var, policy, deterministic=True, **kwargs)
+            return qvals
