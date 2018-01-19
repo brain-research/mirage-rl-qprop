@@ -169,6 +169,8 @@ def get_qf(env, info, algo_name, qf_hidden_sizes, qf_hidden_nonlinearity, **kwar
                     'nuqfqprop',
                     ]:
                 extra_kwargs['eqf_use_full_qf'] = True
+            elif algo_name == 'mqprop':
+                extra_kwargs['mqprop'] = True
             qf = ContinuousMLPQFunction(
                 env_spec=env.spec,
                 hidden_sizes=hidden_sizes,

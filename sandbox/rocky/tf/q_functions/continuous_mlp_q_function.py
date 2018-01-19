@@ -21,6 +21,7 @@ class ContinuousMLPQFunction(QFunction, LayersPowered, Serializable):
             output_nonlinearity=None,
             eqf_use_full_qf=False,
             eqf_sample_size=1,
+            mqprop=False,
             bn=False):
         Serializable.quick_init(self, locals())
 
@@ -76,6 +77,7 @@ class ContinuousMLPQFunction(QFunction, LayersPowered, Serializable):
 
             self.eqf_use_full_qf=eqf_use_full_qf
             self.eqf_sample_size=eqf_sample_size
+            self.mqprop=mqprop
 
             LayersPowered.__init__(self, [l_output])
 

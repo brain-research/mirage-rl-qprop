@@ -53,6 +53,7 @@ class BatchPolopt(RLAlgorithm, Poleval):
             restore_auto=True,
             policy_sample_last=True,
             qprop=True,
+            mqprop=False,
             ac_sample_backups=0,
             ac_delta=0,
             save_format='pickle',
@@ -100,6 +101,7 @@ class BatchPolopt(RLAlgorithm, Poleval):
         self.qf = qf
         if self.qf is not None:
             self.qprop = qprop
+            self.mqprop = mqprop
             self.qf_updates_ratio = qf_updates_ratio
             self.qprop_nu = qprop_nu
             self.qprop_eta_option = qprop_eta_option
