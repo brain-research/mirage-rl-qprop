@@ -98,6 +98,9 @@ class BaseSampler(Sampler):
                 logger.record_tabular("AbsLearnSignalOld", old_advantages_scale)
                 logger.log("Qprop, subtracting control variate")
                 advantages_bar = self.algo.get_control_variate(observations=observations, actions=actions)
+                if hasatter(self.algo, 'mqprop'):
+                    # TODO: Add flag here to subtract the value functions for zero-order Taylor case
+                    advantages_bar -= baselines_tensor
                 if self.algo.qprop_eta_option == 'ones':
                     etas = np.ones_like(advantages)
                 elif self.algo.qprop_eta_option == 'adapt1': # conservative

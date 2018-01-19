@@ -31,7 +31,7 @@ flags.DEFINE_float('learning_rate', 0.001, 'Base learning rate.')
 flags.DEFINE_integer('batch_size', 5000, 'Batch size.')
 flags.DEFINE_string('algo_name', 'trpo', 'RLAlgorithm.')
 flags.DEFINE_integer('seed', 1, 'Seed.')
-flags.DEFINE_integer('max_episode', 100000, 'Max episodes.')
+flags.DEFINE_integer('max_episode', 4000, 'Max episodes.')
 flags.DEFINE_boolean('normalize_obs', False, 'Normalize observations.')
 flags.DEFINE_boolean('recurrent', False, 'Recurrent policy.')
 flags.DEFINE_string('policy_hidden_sizes', '100x50', 'Sizes of policy hidden layers.')
@@ -165,6 +165,12 @@ keys_by_algo_map = dict(
     # IPG with control variate & reparam critic gradient
     nuqfqprop=list(set(policy_keys) |
         set({'qprop_nu'}) |
+        set(qf_keys) |
+        set(qprop_keys) |
+        set(tr_keys)|
+        set(pg_keys)),
+    # Q-Prop with no action-dependent baseline
+    mqprop=list(set(policy_keys) |
         set(qf_keys) |
         set(qprop_keys) |
         set(tr_keys)|

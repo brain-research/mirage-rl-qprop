@@ -126,10 +126,11 @@ class NPO(BatchPolopt):
                 input_list += [off_obs_var]
                 surr_loss -= tf.reduce_mean(off_e_qval)# * eta_var)
             else:
-                # TODO put a switch here later
-                # e_qval = self.qf.get_e_qval_sym(obs_var, self.policy, deterministic=True)
-                # Originally, we subtract this value for the bias correction, but we don't do that for this value.
-                # surr_loss -= tf.reduce_mean(e_qval * eta_var)
+                if not self.mqprop:
+                    # Originally, we subtract this value for the bias correction, but we don't do that if we want mqprop (no action-conditional baseline).
+                    e_qval = self.qf.get_e_qval_sym(obs_var, self.policy, deterministic=True)
+                    surr_loss -= tf.reduce_mean(e_qval * eta_var)
+
             mean_kl = tf.reduce_mean(kl)
             input_list += [eta_var]
             control_variate = self.qf.get_cv_sym(obs_var,
