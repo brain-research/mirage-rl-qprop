@@ -28,13 +28,13 @@ def main(fnames):
         fh.close()
 
         data = np.genfromtxt(fname, delimiter=',', skip_header=0, skip_footer=0, names=fields.split(','))
-        eps = data['Iteration']
-        rews = data['AverageReturn']
+        eps = data['Iteration'][:4000]
+        rews = data['AverageReturn'][:4000]
         plt.plot(eps, savgol_filter(rews, 101, 5), color[i], label="{}".format(descs[i]))
         plt.plot(eps, rews, color[i], alpha=0.175)
 
     plt.legend(loc='lower center', ncol=3)
-    axes = plt.gca()
+    # axes = plt.gca()
     # axes.set_ylim([-700, 5000])
     if not os.path.exists('plots/'):
         os.makedirs('plots/')
