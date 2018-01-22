@@ -367,6 +367,10 @@ def get_algo(env, policy, es, qf, baseline, max_path_length,
             extra_kwargs['qprop'] = False # disable qprop
             if ac_delta == 0: qf = None
         if algo_name in [
+                'mqprop',
+                ]:
+            extra_kwargs['mqprop'] = True
+        if algo_name in [
                 'nuqprop',
                 'nuqfqprop',
                 ]:

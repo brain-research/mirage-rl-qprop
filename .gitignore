@@ -2,3 +2,4 @@
 *.py[cod]
 vendor/*
 *-stdout
+data/local/test*

@@ -225,11 +225,14 @@ class BatchPolopt(RLAlgorithm, Poleval):
         while itr < self.n_itr:
             itr_start_time = time.time()
             with logger.prefix('itr #%d | ' % itr):
+                logger.log("Batch Size: %d" % self.batch_size)
                 logger.log("Mem: %f"%memory_usage_resource())
                 logger.log("Obtaining samples...")
                 paths = self.obtain_samples(itr)
+                logger.log("Number of samples: %d" % len(paths))
                 logger.log("Processing samples...")
                 samples_data = self.process_samples(itr, paths)
+                logger.log("Number of samples: %d" % len(samples_data))
                 logger.log("Logging diagnostics...")
                 self.log_diagnostics(paths)
                 if self.qf is not None:
