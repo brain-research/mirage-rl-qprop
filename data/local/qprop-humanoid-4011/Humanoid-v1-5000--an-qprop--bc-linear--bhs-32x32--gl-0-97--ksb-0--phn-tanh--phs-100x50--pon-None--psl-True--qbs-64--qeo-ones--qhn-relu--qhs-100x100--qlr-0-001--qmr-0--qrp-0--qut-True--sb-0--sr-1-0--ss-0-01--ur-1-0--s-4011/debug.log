@@ -1527,3 +1527,1337 @@
 2018-01-21 21:24:18.480075 PST | itr #24 | Mem: 3441.800781
 2018-01-21 21:24:18.480316 PST | itr #24 | Obtaining samples...
 2018-01-21 21:24:18.480467 PST | itr #24 | Obtaining samples for iteration 24...
+2018-01-21 21:24:45.405008 PST | itr #24 | Processing samples...
+2018-01-21 21:24:46.039627 PST | itr #24 | Qprop, subtracting control variate
+2018-01-21 21:24:46.105627 PST | itr #24 | M-Qprop, subtracting values
+2018-01-21 21:24:46.107327 PST | itr #24 | fitting baseline...
+2018-01-21 21:24:52.568715 PST | itr #24 | fitted
+2018-01-21 21:24:52.571098 PST | itr #24 | Logging diagnostics...
+2018-01-21 21:24:52.572812 PST | itr #24 | Adding samples to replay pool...
+2018-01-21 21:24:52.664986 PST | itr #24 | PathsInfo epsN=71, meanL=72.27, maxL=136, minL=36
+2018-01-21 21:24:52.665237 PST | itr #24 | Put 5131 transitions to replay, size=125806
+2018-01-21 21:24:52.665390 PST | itr #24 | Optimizing critic before policy...
+2018-01-21 21:24:52.665549 PST | itr #24 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:26:05.155480 PST | itr #24 | Optimizing policy...
+2018-01-21 21:26:05.155777 PST | itr #24 | Computing loss before
+2018-01-21 21:26:05.214107 PST | itr #24 | Computing KL before
+2018-01-21 21:26:05.244594 PST | itr #24 | Optimizing
+2018-01-21 21:26:05.381966 PST | itr #24 | Start CG optimization: #parameters: 43634, #inputs: 5131, #subsample_inputs: 5131
+2018-01-21 21:26:05.502633 PST | itr #24 | computing loss before
+2018-01-21 21:26:05.597288 PST | itr #24 | performing update
+2018-01-21 21:26:05.597508 PST | itr #24 | computing gradient
+2018-01-21 21:26:05.709120 PST | itr #24 | gradient computed
+2018-01-21 21:26:05.709347 PST | itr #24 | computing descent direction
+2018-01-21 21:26:07.284208 PST | itr #24 | descent direction computed
+2018-01-21 21:26:07.342758 PST | itr #24 | backtrack iters: 0
+2018-01-21 21:26:07.342973 PST | itr #24 | computing loss after
+2018-01-21 21:26:07.343102 PST | itr #24 | optimization finished
+2018-01-21 21:26:07.495291 PST | itr #24 | Computing KL after
+2018-01-21 21:26:07.535263 PST | itr #24 | Computing loss after
+2018-01-21 21:26:07.641537 PST | itr #24 | Saved
+2018-01-21 21:26:07.642836 PST | -----------------------  --------------
+2018-01-21 21:26:07.643006 PST | PolicyExecTime              7.73293
+2018-01-21 21:26:07.643149 PST | EnvExecTime                18.7269
+2018-01-21 21:26:07.643276 PST | ProcessExecTime             0.354188
+2018-01-21 21:26:07.643399 PST | AbsLearnSignalOld           0.0978644
+2018-01-21 21:26:07.643520 PST | AbsLearnSignalNew           0.561456
+2018-01-21 21:26:07.643641 PST | AbsLearnSignal              0.561456
+2018-01-21 21:26:07.643761 PST | Iteration                  24
+2018-01-21 21:26:07.643881 PST | AverageDiscountedReturn   244.796
+2018-01-21 21:26:07.644002 PST | AverageReturn             350.447
+2018-01-21 21:26:07.644122 PST | ExplainedVariance        -170.633
+2018-01-21 21:26:07.644244 PST | NumTrajs                   71
+2018-01-21 21:26:07.644365 PST | Entropy                    24.1224
+2018-01-21 21:26:07.644486 PST | Perplexity                  2.99379e+10
+2018-01-21 21:26:07.644608 PST | StdReturn                  93.5426
+2018-01-21 21:26:07.644730 PST | MaxReturn                 655.689
+2018-01-21 21:26:07.644850 PST | MinReturn                 160.537
+2018-01-21 21:26:07.644971 PST | AveragePolicyStd            1.00003
+2018-01-21 21:26:07.645093 PST | LossBefore               -167.21
+2018-01-21 21:26:07.645214 PST | LossAfter                -167.489
+2018-01-21 21:26:07.645336 PST | MeanKLBefore                0
+2018-01-21 21:26:07.645458 PST | MeanKL                      0.00999924
+2018-01-21 21:26:07.645579 PST | dLoss                       0.278763
+2018-01-21 21:26:07.645701 PST | AverageQLoss              107.339
+2018-01-21 21:26:07.645822 PST | AverageQ                  152.719
+2018-01-21 21:26:07.645943 PST | AverageAbsQ               152.755
+2018-01-21 21:26:07.646065 PST | AverageY                  152.737
+2018-01-21 21:26:07.646186 PST | AverageAbsY               152.747
+2018-01-21 21:26:07.646307 PST | AverageAbsQYDiff            7.27927
+2018-01-21 21:26:07.646428 PST | Time                     2487.08
+2018-01-21 21:26:07.646549 PST | ItrTime                   109.162
+2018-01-21 21:26:07.646670 PST | -----------------------  --------------
+2018-01-21 21:26:07.755633 PST | itr #25 | Mem: 3441.800781
+2018-01-21 21:26:07.755851 PST | itr #25 | Obtaining samples...
+2018-01-21 21:26:07.755988 PST | itr #25 | Obtaining samples for iteration 25...
+2018-01-21 21:26:31.463521 PST | itr #25 | Processing samples...
+2018-01-21 21:26:31.828163 PST | itr #25 | Qprop, subtracting control variate
+2018-01-21 21:26:31.966393 PST | itr #25 | M-Qprop, subtracting values
+2018-01-21 21:26:31.968339 PST | itr #25 | fitting baseline...
+2018-01-21 21:26:33.437251 PST | itr #25 | fitted
+2018-01-21 21:26:33.438457 PST | itr #25 | Logging diagnostics...
+2018-01-21 21:26:33.440106 PST | itr #25 | Adding samples to replay pool...
+2018-01-21 21:26:33.646626 PST | itr #25 | PathsInfo epsN=67, meanL=75.07, maxL=166, minL=40
+2018-01-21 21:26:33.646859 PST | itr #25 | Put 5030 transitions to replay, size=130836
+2018-01-21 21:26:33.646995 PST | itr #25 | Optimizing critic before policy...
+2018-01-21 21:26:33.647152 PST | itr #25 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:27:42.785739 PST | itr #25 | Optimizing policy...
+2018-01-21 21:27:42.786012 PST | itr #25 | Computing loss before
+2018-01-21 21:27:42.863393 PST | itr #25 | Computing KL before
+2018-01-21 21:27:42.892037 PST | itr #25 | Optimizing
+2018-01-21 21:27:43.101598 PST | itr #25 | Start CG optimization: #parameters: 43634, #inputs: 5030, #subsample_inputs: 5030
+2018-01-21 21:27:43.355617 PST | itr #25 | computing loss before
+2018-01-21 21:27:43.406700 PST | itr #25 | performing update
+2018-01-21 21:27:43.406902 PST | itr #25 | computing gradient
+2018-01-21 21:27:43.510002 PST | itr #25 | gradient computed
+2018-01-21 21:27:43.510226 PST | itr #25 | computing descent direction
+2018-01-21 21:27:44.669424 PST | itr #25 | descent direction computed
+2018-01-21 21:27:44.716017 PST | itr #25 | backtrack iters: 0
+2018-01-21 21:27:44.716225 PST | itr #25 | computing loss after
+2018-01-21 21:27:44.716365 PST | itr #25 | optimization finished
+2018-01-21 21:27:44.849509 PST | itr #25 | Computing KL after
+2018-01-21 21:27:44.889852 PST | itr #25 | Computing loss after
+2018-01-21 21:27:45.008557 PST | itr #25 | Saved
+2018-01-21 21:27:45.009871 PST | -----------------------  --------------
+2018-01-21 21:27:45.010045 PST | PolicyExecTime              5.81075
+2018-01-21 21:27:45.010187 PST | EnvExecTime                17.6181
+2018-01-21 21:27:45.010324 PST | ProcessExecTime             0.194734
+2018-01-21 21:27:45.010461 PST | AbsLearnSignalOld           0.479994
+2018-01-21 21:27:45.010597 PST | AbsLearnSignalNew           0.843342
+2018-01-21 21:27:45.010737 PST | AbsLearnSignal              0.843342
+2018-01-21 21:27:45.010882 PST | Iteration                  25
+2018-01-21 21:27:45.011023 PST | AverageDiscountedReturn   255.395
+2018-01-21 21:27:45.015516 PST | AverageReturn             372.036
+2018-01-21 21:27:45.015675 PST | ExplainedVariance          -0.347444
+2018-01-21 21:27:45.015820 PST | NumTrajs                   67
+2018-01-21 21:27:45.015960 PST | Entropy                    24.1206
+2018-01-21 21:27:45.016096 PST | Perplexity                  2.98855e+10
+2018-01-21 21:27:45.016239 PST | StdReturn                 106.047
+2018-01-21 21:27:45.016375 PST | MaxReturn                 804.186
+2018-01-21 21:27:45.016511 PST | MinReturn                 191.581
+2018-01-21 21:27:45.016644 PST | AveragePolicyStd            0.999924
+2018-01-21 21:27:45.016777 PST | LossBefore               -173.439
+2018-01-21 21:27:45.016909 PST | LossAfter                -173.685
+2018-01-21 21:27:45.017042 PST | MeanKLBefore                0
+2018-01-21 21:27:45.017174 PST | MeanKL                      0.00998826
+2018-01-21 21:27:45.017304 PST | dLoss                       0.24559
+2018-01-21 21:27:45.017436 PST | AverageQLoss              112.281
+2018-01-21 21:27:45.017567 PST | AverageQ                  158.204
+2018-01-21 21:27:45.017705 PST | AverageAbsQ               158.243
+2018-01-21 21:27:45.017846 PST | AverageY                  158.222
+2018-01-21 21:27:45.017984 PST | AverageAbsY               158.233
+2018-01-21 21:27:45.018124 PST | AverageAbsQYDiff            7.43195
+2018-01-21 21:27:45.018263 PST | Time                     2584.44
+2018-01-21 21:27:45.018399 PST | ItrTime                    97.2532
+2018-01-21 21:27:45.018535 PST | -----------------------  --------------
+2018-01-21 21:27:45.246261 PST | itr #26 | Mem: 3441.800781
+2018-01-21 21:27:45.246495 PST | itr #26 | Obtaining samples...
+2018-01-21 21:27:45.246651 PST | itr #26 | Obtaining samples for iteration 26...
+2018-01-21 21:28:10.640402 PST | itr #26 | Processing samples...
+2018-01-21 21:28:10.813186 PST | itr #26 | Qprop, subtracting control variate
+2018-01-21 21:28:10.887407 PST | itr #26 | M-Qprop, subtracting values
+2018-01-21 21:28:10.889134 PST | itr #26 | fitting baseline...
+2018-01-21 21:28:12.065255 PST | itr #26 | fitted
+2018-01-21 21:28:12.066469 PST | itr #26 | Logging diagnostics...
+2018-01-21 21:28:12.068620 PST | itr #26 | Adding samples to replay pool...
+2018-01-21 21:28:12.152470 PST | itr #26 | PathsInfo epsN=67, meanL=75.15, maxL=137, minL=17
+2018-01-21 21:28:12.152699 PST | itr #26 | Put 5035 transitions to replay, size=135871
+2018-01-21 21:28:12.152837 PST | itr #26 | Optimizing critic before policy...
+2018-01-21 21:28:12.152981 PST | itr #26 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:29:20.994491 PST | itr #26 | Optimizing policy...
+2018-01-21 21:29:20.994778 PST | itr #26 | Computing loss before
+2018-01-21 21:29:21.053418 PST | itr #26 | Computing KL before
+2018-01-21 21:29:21.081988 PST | itr #26 | Optimizing
+2018-01-21 21:29:21.245178 PST | itr #26 | Start CG optimization: #parameters: 43634, #inputs: 5035, #subsample_inputs: 5035
+2018-01-21 21:29:21.479751 PST | itr #26 | computing loss before
+2018-01-21 21:29:21.572995 PST | itr #26 | performing update
+2018-01-21 21:29:21.573246 PST | itr #26 | computing gradient
+2018-01-21 21:29:21.704672 PST | itr #26 | gradient computed
+2018-01-21 21:29:21.704906 PST | itr #26 | computing descent direction
+2018-01-21 21:29:23.213926 PST | itr #26 | descent direction computed
+2018-01-21 21:29:23.313054 PST | itr #26 | backtrack iters: 1
+2018-01-21 21:29:23.313264 PST | itr #26 | computing loss after
+2018-01-21 21:29:23.313391 PST | itr #26 | optimization finished
+2018-01-21 21:29:23.478660 PST | itr #26 | Computing KL after
+2018-01-21 21:29:23.506178 PST | itr #26 | Computing loss after
+2018-01-21 21:29:23.594600 PST | itr #26 | Saved
+2018-01-21 21:29:23.596192 PST | -----------------------  --------------
+2018-01-21 21:29:23.596374 PST | PolicyExecTime              7.25804
+2018-01-21 21:29:23.596532 PST | EnvExecTime                17.6954
+2018-01-21 21:29:23.596678 PST | ProcessExecTime             0.309976
+2018-01-21 21:29:23.596805 PST | AbsLearnSignalOld           0.554354
+2018-01-21 21:29:23.596931 PST | AbsLearnSignalNew           0.858433
+2018-01-21 21:29:23.597056 PST | AbsLearnSignal              0.858433
+2018-01-21 21:29:23.597181 PST | Iteration                  26
+2018-01-21 21:29:23.597307 PST | AverageDiscountedReturn   254.78
+2018-01-21 21:29:23.597432 PST | AverageReturn             370.561
+2018-01-21 21:29:23.597557 PST | ExplainedVariance           0.0611158
+2018-01-21 21:29:23.597689 PST | NumTrajs                   67
+2018-01-21 21:29:23.597814 PST | Entropy                    24.1203
+2018-01-21 21:29:23.597939 PST | Perplexity                  2.98768e+10
+2018-01-21 21:29:23.598063 PST | StdReturn                  96.6649
+2018-01-21 21:29:23.598188 PST | MaxReturn                 707.316
+2018-01-21 21:29:23.598312 PST | MinReturn                  80.5856
+2018-01-21 21:29:23.598437 PST | AveragePolicyStd            0.999907
+2018-01-21 21:29:23.598561 PST | LossBefore               -181.297
+2018-01-21 21:29:23.598703 PST | LossAfter                -181.508
+2018-01-21 21:29:23.598824 PST | MeanKLBefore                0
+2018-01-21 21:29:23.598943 PST | MeanKL                      0.00641792
+2018-01-21 21:29:23.599063 PST | dLoss                       0.210449
+2018-01-21 21:29:23.599203 PST | AverageQLoss              116.203
+2018-01-21 21:29:23.599324 PST | AverageQ                  163.338
+2018-01-21 21:29:23.599444 PST | AverageAbsQ               163.376
+2018-01-21 21:29:23.599564 PST | AverageY                  163.354
+2018-01-21 21:29:23.599684 PST | AverageAbsY               163.365
+2018-01-21 21:29:23.599803 PST | AverageAbsQYDiff            7.51671
+2018-01-21 21:29:23.599922 PST | Time                     2683.03
+2018-01-21 21:29:23.600041 PST | ItrTime                    98.3486
+2018-01-21 21:29:23.600171 PST | -----------------------  --------------
+2018-01-21 21:29:23.734341 PST | itr #27 | Mem: 3442.750000
+2018-01-21 21:29:23.735648 PST | itr #27 | Obtaining samples...
+2018-01-21 21:29:23.735790 PST | itr #27 | Obtaining samples for iteration 27...
+2018-01-21 21:29:47.498873 PST | itr #27 | Processing samples...
+2018-01-21 21:29:47.829143 PST | itr #27 | Qprop, subtracting control variate
+2018-01-21 21:29:47.908399 PST | itr #27 | M-Qprop, subtracting values
+2018-01-21 21:29:47.910057 PST | itr #27 | fitting baseline...
+2018-01-21 21:29:50.344117 PST | itr #27 | fitted
+2018-01-21 21:29:50.349131 PST | itr #27 | Logging diagnostics...
+2018-01-21 21:29:50.350833 PST | itr #27 | Adding samples to replay pool...
+2018-01-21 21:29:50.438718 PST | itr #27 | PathsInfo epsN=65, meanL=77.26, maxL=124, minL=35
+2018-01-21 21:29:50.438966 PST | itr #27 | Put 5022 transitions to replay, size=140893
+2018-01-21 21:29:50.446212 PST | itr #27 | Optimizing critic before policy...
+2018-01-21 21:29:50.446377 PST | itr #27 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:31:02.099306 PST | itr #27 | Optimizing policy...
+2018-01-21 21:31:02.099559 PST | itr #27 | Computing loss before
+2018-01-21 21:31:02.174428 PST | itr #27 | Computing KL before
+2018-01-21 21:31:02.202999 PST | itr #27 | Optimizing
+2018-01-21 21:31:02.396723 PST | itr #27 | Start CG optimization: #parameters: 43634, #inputs: 5022, #subsample_inputs: 5022
+2018-01-21 21:31:02.719159 PST | itr #27 | computing loss before
+2018-01-21 21:31:02.773141 PST | itr #27 | performing update
+2018-01-21 21:31:02.773360 PST | itr #27 | computing gradient
+2018-01-21 21:31:02.893156 PST | itr #27 | gradient computed
+2018-01-21 21:31:02.893383 PST | itr #27 | computing descent direction
+2018-01-21 21:31:04.268578 PST | itr #27 | descent direction computed
+2018-01-21 21:31:04.322783 PST | itr #27 | backtrack iters: 0
+2018-01-21 21:31:04.323003 PST | itr #27 | computing loss after
+2018-01-21 21:31:04.323155 PST | itr #27 | optimization finished
+2018-01-21 21:31:04.486867 PST | itr #27 | Computing KL after
+2018-01-21 21:31:04.526745 PST | itr #27 | Computing loss after
+2018-01-21 21:31:04.592079 PST | itr #27 | Saved
+2018-01-21 21:31:04.593673 PST | -----------------------  --------------
+2018-01-21 21:31:04.593864 PST | PolicyExecTime              6.44636
+2018-01-21 21:31:04.594009 PST | EnvExecTime                17.0017
+2018-01-21 21:31:04.594137 PST | ProcessExecTime             0.213582
+2018-01-21 21:31:04.594261 PST | AbsLearnSignalOld           0.39263
+2018-01-21 21:31:04.594384 PST | AbsLearnSignalNew           0.85752
+2018-01-21 21:31:04.594508 PST | AbsLearnSignal              0.85752
+2018-01-21 21:31:04.594631 PST | Iteration                  27
+2018-01-21 21:31:04.594754 PST | AverageDiscountedReturn   260.375
+2018-01-21 21:31:04.594876 PST | AverageReturn             382.043
+2018-01-21 21:31:04.594997 PST | ExplainedVariance          -0.744561
+2018-01-21 21:31:04.595144 PST | NumTrajs                   65
+2018-01-21 21:31:04.595280 PST | Entropy                    24.1206
+2018-01-21 21:31:04.595404 PST | Perplexity                  2.98832e+10
+2018-01-21 21:31:04.595527 PST | StdReturn                  95.6841
+2018-01-21 21:31:04.595650 PST | MaxReturn                 630.143
+2018-01-21 21:31:04.595772 PST | MinReturn                 175.826
+2018-01-21 21:31:04.595895 PST | AveragePolicyStd            0.999919
+2018-01-21 21:31:04.596017 PST | LossBefore               -183.167
+2018-01-21 21:31:04.596140 PST | LossAfter                -183.428
+2018-01-21 21:31:04.596273 PST | MeanKLBefore                0
+2018-01-21 21:31:04.596407 PST | MeanKL                      0.00999694
+2018-01-21 21:31:04.596546 PST | dLoss                       0.2603
+2018-01-21 21:31:04.596673 PST | AverageQLoss              118.584
+2018-01-21 21:31:04.596801 PST | AverageQ                  167.599
+2018-01-21 21:31:04.596924 PST | AverageAbsQ               167.645
+2018-01-21 21:31:04.597047 PST | AverageY                  167.615
+2018-01-21 21:31:04.597170 PST | AverageAbsY               167.632
+2018-01-21 21:31:04.597303 PST | AverageAbsQYDiff            7.56865
+2018-01-21 21:31:04.597427 PST | Time                     2784.03
+2018-01-21 21:31:04.597549 PST | ItrTime                   100.858
+2018-01-21 21:31:04.597671 PST | -----------------------  --------------
+2018-01-21 21:31:04.671043 PST | itr #28 | Mem: 3442.750000
+2018-01-21 21:31:04.671280 PST | itr #28 | Obtaining samples...
+2018-01-21 21:31:04.671418 PST | itr #28 | Obtaining samples for iteration 28...
+2018-01-21 21:31:30.298645 PST | itr #28 | Processing samples...
+2018-01-21 21:31:30.692762 PST | itr #28 | Qprop, subtracting control variate
+2018-01-21 21:31:30.772145 PST | itr #28 | M-Qprop, subtracting values
+2018-01-21 21:31:30.773860 PST | itr #28 | fitting baseline...
+2018-01-21 21:31:35.242081 PST | itr #28 | fitted
+2018-01-21 21:31:35.243402 PST | itr #28 | Logging diagnostics...
+2018-01-21 21:31:35.252719 PST | itr #28 | Adding samples to replay pool...
+2018-01-21 21:31:35.358920 PST | itr #28 | PathsInfo epsN=65, meanL=77.78, maxL=148, minL=46
+2018-01-21 21:31:35.359378 PST | itr #28 | Put 5056 transitions to replay, size=145949
+2018-01-21 21:31:35.362842 PST | itr #28 | Optimizing critic before policy...
+2018-01-21 21:31:35.363010 PST | itr #28 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:32:44.001231 PST | itr #28 | Optimizing policy...
+2018-01-21 21:32:44.001494 PST | itr #28 | Computing loss before
+2018-01-21 21:32:44.057828 PST | itr #28 | Computing KL before
+2018-01-21 21:32:44.086110 PST | itr #28 | Optimizing
+2018-01-21 21:32:44.241521 PST | itr #28 | Start CG optimization: #parameters: 43634, #inputs: 5056, #subsample_inputs: 5056
+2018-01-21 21:32:44.374570 PST | itr #28 | computing loss before
+2018-01-21 21:32:44.452245 PST | itr #28 | performing update
+2018-01-21 21:32:44.452453 PST | itr #28 | computing gradient
+2018-01-21 21:32:44.548271 PST | itr #28 | gradient computed
+2018-01-21 21:32:44.548491 PST | itr #28 | computing descent direction
+2018-01-21 21:32:45.954013 PST | itr #28 | descent direction computed
+2018-01-21 21:32:46.080303 PST | itr #28 | backtrack iters: 1
+2018-01-21 21:32:46.080525 PST | itr #28 | computing loss after
+2018-01-21 21:32:46.080666 PST | itr #28 | optimization finished
+2018-01-21 21:32:46.222687 PST | itr #28 | Computing KL after
+2018-01-21 21:32:46.260313 PST | itr #28 | Computing loss after
+2018-01-21 21:32:46.407275 PST | itr #28 | Saved
+2018-01-21 21:32:46.408582 PST | -----------------------  --------------
+2018-01-21 21:32:46.408753 PST | PolicyExecTime              7.93615
+2018-01-21 21:32:46.408892 PST | EnvExecTime                17.2547
+2018-01-21 21:32:46.409028 PST | ProcessExecTime             0.282463
+2018-01-21 21:32:46.409166 PST | AbsLearnSignalOld           0.530143
+2018-01-21 21:32:46.409335 PST | AbsLearnSignalNew           0.858021
+2018-01-21 21:32:46.409468 PST | AbsLearnSignal              0.858021
+2018-01-21 21:32:46.409609 PST | Iteration                  28
+2018-01-21 21:32:46.409750 PST | AverageDiscountedReturn   257.657
+2018-01-21 21:32:46.409886 PST | AverageReturn             378.951
+2018-01-21 21:32:46.410021 PST | ExplainedVariance          -0.085809
+2018-01-21 21:32:46.410163 PST | NumTrajs                   65
+2018-01-21 21:32:46.410300 PST | Entropy                    24.1207
+2018-01-21 21:32:46.410438 PST | Perplexity                  2.98863e+10
+2018-01-21 21:32:46.410573 PST | StdReturn                 108.396
+2018-01-21 21:32:46.410712 PST | MaxReturn                 732.119
+2018-01-21 21:32:46.410844 PST | MinReturn                 206.378
+2018-01-21 21:32:46.410982 PST | AveragePolicyStd            0.999925
+2018-01-21 21:32:46.411634 PST | LossBefore               -183.065
+2018-01-21 21:32:46.411795 PST | LossAfter                -183.248
+2018-01-21 21:32:46.411941 PST | MeanKLBefore                0
+2018-01-21 21:32:46.412082 PST | MeanKL                      0.00640166
+2018-01-21 21:32:46.412226 PST | dLoss                       0.182861
+2018-01-21 21:32:46.412362 PST | AverageQLoss              124.166
+2018-01-21 21:32:46.412519 PST | AverageQ                  172.341
+2018-01-21 21:32:46.412659 PST | AverageAbsQ               172.399
+2018-01-21 21:32:46.412796 PST | AverageY                  172.362
+2018-01-21 21:32:46.412929 PST | AverageAbsY               172.382
+2018-01-21 21:32:46.413062 PST | AverageAbsQYDiff            7.71401
+2018-01-21 21:32:46.413193 PST | Time                     2885.84
+2018-01-21 21:32:46.413329 PST | ItrTime                   101.737
+2018-01-21 21:32:46.413470 PST | -----------------------  --------------
+2018-01-21 21:32:46.584068 PST | itr #29 | Mem: 3445.644531
+2018-01-21 21:32:46.584335 PST | itr #29 | Obtaining samples...
+2018-01-21 21:32:46.584484 PST | itr #29 | Obtaining samples for iteration 29...
+2018-01-21 21:33:12.143241 PST | itr #29 | Processing samples...
+2018-01-21 21:33:12.289116 PST | itr #29 | Qprop, subtracting control variate
+2018-01-21 21:33:12.393515 PST | itr #29 | M-Qprop, subtracting values
+2018-01-21 21:33:12.395281 PST | itr #29 | fitting baseline...
+2018-01-21 21:33:18.200585 PST | itr #29 | fitted
+2018-01-21 21:33:18.201741 PST | itr #29 | Logging diagnostics...
+2018-01-21 21:33:18.203370 PST | itr #29 | Adding samples to replay pool...
+2018-01-21 21:33:18.322919 PST | itr #29 | PathsInfo epsN=66, meanL=76.53, maxL=155, minL=41
+2018-01-21 21:33:18.323178 PST | itr #29 | Put 5051 transitions to replay, size=151000
+2018-01-21 21:33:18.323327 PST | itr #29 | Optimizing critic before policy...
+2018-01-21 21:33:18.323480 PST | itr #29 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:34:28.267779 PST | itr #29 | Optimizing policy...
+2018-01-21 21:34:28.268036 PST | itr #29 | Computing loss before
+2018-01-21 21:34:28.336901 PST | itr #29 | Computing KL before
+2018-01-21 21:34:28.365717 PST | itr #29 | Optimizing
+2018-01-21 21:34:28.519623 PST | itr #29 | Start CG optimization: #parameters: 43634, #inputs: 5051, #subsample_inputs: 5051
+2018-01-21 21:34:28.722399 PST | itr #29 | computing loss before
+2018-01-21 21:34:28.888005 PST | itr #29 | performing update
+2018-01-21 21:34:28.888233 PST | itr #29 | computing gradient
+2018-01-21 21:34:29.001069 PST | itr #29 | gradient computed
+2018-01-21 21:34:29.001510 PST | itr #29 | computing descent direction
+2018-01-21 21:34:30.742240 PST | itr #29 | descent direction computed
+2018-01-21 21:34:30.874903 PST | itr #29 | backtrack iters: 1
+2018-01-21 21:34:30.875138 PST | itr #29 | computing loss after
+2018-01-21 21:34:30.875281 PST | itr #29 | optimization finished
+2018-01-21 21:34:31.028202 PST | itr #29 | Computing KL after
+2018-01-21 21:34:31.075603 PST | itr #29 | Computing loss after
+2018-01-21 21:34:31.186189 PST | itr #29 | Saved
+2018-01-21 21:34:31.188590 PST | -----------------------  --------------
+2018-01-21 21:34:31.188814 PST | PolicyExecTime              6.58176
+2018-01-21 21:34:31.189765 PST | EnvExecTime                18.6685
+2018-01-21 21:34:31.189894 PST | ProcessExecTime             0.221593
+2018-01-21 21:34:31.190017 PST | AbsLearnSignalOld           0.435093
+2018-01-21 21:34:31.190137 PST | AbsLearnSignalNew           0.85643
+2018-01-21 21:34:31.190257 PST | AbsLearnSignal              0.85643
+2018-01-21 21:34:31.190378 PST | Iteration                  29
+2018-01-21 21:34:31.190500 PST | AverageDiscountedReturn   253.86
+2018-01-21 21:34:31.190620 PST | AverageReturn             371.123
+2018-01-21 21:34:31.190740 PST | ExplainedVariance          -0.326626
+2018-01-21 21:34:31.190860 PST | NumTrajs                   66
+2018-01-21 21:34:31.190980 PST | Entropy                    24.1211
+2018-01-21 21:34:31.191100 PST | Perplexity                  2.98995e+10
+2018-01-21 21:34:31.192916 PST | StdReturn                 107.85
+2018-01-21 21:34:31.193061 PST | MaxReturn                 706.316
+2018-01-21 21:34:31.193204 PST | MinReturn                 204.228
+2018-01-21 21:34:31.193343 PST | AveragePolicyStd            0.999951
+2018-01-21 21:34:31.193480 PST | LossBefore               -191.978
+2018-01-21 21:34:31.193621 PST | LossAfter                -192.143
+2018-01-21 21:34:31.193770 PST | MeanKLBefore                0
+2018-01-21 21:34:31.193907 PST | MeanKL                      0.00640933
+2018-01-21 21:34:31.194043 PST | dLoss                       0.165222
+2018-01-21 21:34:31.194177 PST | AverageQLoss              127.495
+2018-01-21 21:34:31.194310 PST | AverageQ                  175.765
+2018-01-21 21:34:31.194442 PST | AverageAbsQ               175.819
+2018-01-21 21:34:31.194581 PST | AverageY                  175.785
+2018-01-21 21:34:31.194717 PST | AverageAbsY               175.807
+2018-01-21 21:34:31.194852 PST | AverageAbsQYDiff            7.7919
+2018-01-21 21:34:31.194992 PST | Time                     2990.62
+2018-01-21 21:34:31.195140 PST | ItrTime                   104.602
+2018-01-21 21:34:31.195270 PST | -----------------------  --------------
+2018-01-21 21:34:31.301546 PST | itr #30 | Mem: 3445.644531
+2018-01-21 21:34:31.301766 PST | itr #30 | Obtaining samples...
+2018-01-21 21:34:31.301909 PST | itr #30 | Obtaining samples for iteration 30...
+2018-01-21 21:34:56.027699 PST | itr #30 | Processing samples...
+2018-01-21 21:34:56.262612 PST | itr #30 | Qprop, subtracting control variate
+2018-01-21 21:34:56.327916 PST | itr #30 | M-Qprop, subtracting values
+2018-01-21 21:34:56.329630 PST | itr #30 | fitting baseline...
+2018-01-21 21:34:59.585977 PST | itr #30 | fitted
+2018-01-21 21:34:59.590567 PST | itr #30 | Logging diagnostics...
+2018-01-21 21:34:59.592420 PST | itr #30 | Adding samples to replay pool...
+2018-01-21 21:34:59.752262 PST | itr #30 | PathsInfo epsN=68, meanL=74.29, maxL=128, minL=48
+2018-01-21 21:34:59.752508 PST | itr #30 | Put 5052 transitions to replay, size=156052
+2018-01-21 21:34:59.752648 PST | itr #30 | Optimizing critic before policy...
+2018-01-21 21:34:59.752793 PST | itr #30 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:36:12.075490 PST | itr #30 | Optimizing policy...
+2018-01-21 21:36:12.075748 PST | itr #30 | Computing loss before
+2018-01-21 21:36:12.131270 PST | itr #30 | Computing KL before
+2018-01-21 21:36:12.159453 PST | itr #30 | Optimizing
+2018-01-21 21:36:12.230459 PST | itr #30 | Start CG optimization: #parameters: 43634, #inputs: 5052, #subsample_inputs: 5052
+2018-01-21 21:36:12.300128 PST | itr #30 | computing loss before
+2018-01-21 21:36:12.367461 PST | itr #30 | performing update
+2018-01-21 21:36:12.367685 PST | itr #30 | computing gradient
+2018-01-21 21:36:12.486125 PST | itr #30 | gradient computed
+2018-01-21 21:36:12.486383 PST | itr #30 | computing descent direction
+2018-01-21 21:36:14.155257 PST | itr #30 | descent direction computed
+2018-01-21 21:36:14.270054 PST | itr #30 | backtrack iters: 1
+2018-01-21 21:36:14.270277 PST | itr #30 | computing loss after
+2018-01-21 21:36:14.270409 PST | itr #30 | optimization finished
+2018-01-21 21:36:14.504070 PST | itr #30 | Computing KL after
+2018-01-21 21:36:14.538512 PST | itr #30 | Computing loss after
+2018-01-21 21:36:14.648155 PST | itr #30 | Saved
+2018-01-21 21:36:14.649480 PST | -----------------------  --------------
+2018-01-21 21:36:14.649651 PST | PolicyExecTime              5.83115
+2018-01-21 21:36:14.649794 PST | EnvExecTime                18.6025
+2018-01-21 21:36:14.649932 PST | ProcessExecTime             0.230418
+2018-01-21 21:36:14.650074 PST | AbsLearnSignalOld           0.420384
+2018-01-21 21:36:14.650218 PST | AbsLearnSignalNew           0.850474
+2018-01-21 21:36:14.650356 PST | AbsLearnSignal              0.850474
+2018-01-21 21:36:14.650615 PST | Iteration                  30
+2018-01-21 21:36:14.650890 PST | AverageDiscountedReturn   251.547
+2018-01-21 21:36:14.651025 PST | AverageReturn             363.055
+2018-01-21 21:36:14.653030 PST | ExplainedVariance          -0.847421
+2018-01-21 21:36:14.653167 PST | NumTrajs                   68
+2018-01-21 21:36:14.653289 PST | Entropy                    24.1213
+2018-01-21 21:36:14.653407 PST | Perplexity                  2.99038e+10
+2018-01-21 21:36:14.653526 PST | StdReturn                  91.2534
+2018-01-21 21:36:14.653754 PST | MaxReturn                 651.894
+2018-01-21 21:36:14.653889 PST | MinReturn                 220.635
+2018-01-21 21:36:14.655434 PST | AveragePolicyStd            0.99996
+2018-01-21 21:36:14.655570 PST | LossBefore               -191.065
+2018-01-21 21:36:14.655702 PST | LossAfter                -191.234
+2018-01-21 21:36:14.655852 PST | MeanKLBefore                0
+2018-01-21 21:36:14.655977 PST | MeanKL                      0.00640537
+2018-01-21 21:36:14.678213 PST | dLoss                       0.169556
+2018-01-21 21:36:14.678364 PST | AverageQLoss              128.68
+2018-01-21 21:36:14.678503 PST | AverageQ                  178.595
+2018-01-21 21:36:14.678638 PST | AverageAbsQ               178.645
+2018-01-21 21:36:14.678773 PST | AverageY                  178.618
+2018-01-21 21:36:14.678916 PST | AverageAbsY               178.636
+2018-01-21 21:36:14.679057 PST | AverageAbsQYDiff            7.83362
+2018-01-21 21:36:14.679202 PST | Time                     3094.08
+2018-01-21 21:36:14.679344 PST | ItrTime                   103.347
+2018-01-21 21:36:14.679483 PST | -----------------------  --------------
+2018-01-21 21:36:14.941582 PST | itr #31 | Mem: 3445.644531
+2018-01-21 21:36:14.941812 PST | itr #31 | Obtaining samples...
+2018-01-21 21:36:14.941974 PST | itr #31 | Obtaining samples for iteration 31...
+2018-01-21 21:36:39.409816 PST | itr #31 | Processing samples...
+2018-01-21 21:36:39.542047 PST | itr #31 | Qprop, subtracting control variate
+2018-01-21 21:36:39.636808 PST | itr #31 | M-Qprop, subtracting values
+2018-01-21 21:36:39.637899 PST | itr #31 | fitting baseline...
+2018-01-21 21:36:44.531387 PST | itr #31 | fitted
+2018-01-21 21:36:44.534114 PST | itr #31 | Logging diagnostics...
+2018-01-21 21:36:44.538094 PST | itr #31 | Adding samples to replay pool...
+2018-01-21 21:36:44.616109 PST | itr #31 | PathsInfo epsN=68, meanL=74.35, maxL=169, minL=33
+2018-01-21 21:36:44.616356 PST | itr #31 | Put 5056 transitions to replay, size=161108
+2018-01-21 21:36:44.616520 PST | itr #31 | Optimizing critic before policy...
+2018-01-21 21:36:44.616676 PST | itr #31 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:37:51.558715 PST | itr #31 | Optimizing policy...
+2018-01-21 21:37:51.558973 PST | itr #31 | Computing loss before
+2018-01-21 21:37:51.613592 PST | itr #31 | Computing KL before
+2018-01-21 21:37:51.638503 PST | itr #31 | Optimizing
+2018-01-21 21:37:51.713604 PST | itr #31 | Start CG optimization: #parameters: 43634, #inputs: 5056, #subsample_inputs: 5056
+2018-01-21 21:37:51.852712 PST | itr #31 | computing loss before
+2018-01-21 21:37:51.939364 PST | itr #31 | performing update
+2018-01-21 21:37:51.939583 PST | itr #31 | computing gradient
+2018-01-21 21:37:52.045207 PST | itr #31 | gradient computed
+2018-01-21 21:37:52.045433 PST | itr #31 | computing descent direction
+2018-01-21 21:37:53.643043 PST | itr #31 | descent direction computed
+2018-01-21 21:37:53.753811 PST | itr #31 | backtrack iters: 1
+2018-01-21 21:37:53.754039 PST | itr #31 | computing loss after
+2018-01-21 21:37:53.754167 PST | itr #31 | optimization finished
+2018-01-21 21:37:53.910143 PST | itr #31 | Computing KL after
+2018-01-21 21:37:53.947252 PST | itr #31 | Computing loss after
+2018-01-21 21:37:54.075960 PST | itr #31 | Saved
+2018-01-21 21:37:54.086506 PST | -----------------------  -------------
+2018-01-21 21:37:54.086727 PST | PolicyExecTime              5.91508
+2018-01-21 21:37:54.086877 PST | EnvExecTime                18.1282
+2018-01-21 21:37:54.087015 PST | ProcessExecTime             0.338833
+2018-01-21 21:37:54.087181 PST | AbsLearnSignalOld           0.236553
+2018-01-21 21:37:54.087301 PST | AbsLearnSignalNew           0.84697
+2018-01-21 21:37:54.087418 PST | AbsLearnSignal              0.84697
+2018-01-21 21:37:54.087542 PST | Iteration                  31
+2018-01-21 21:37:54.087665 PST | AverageDiscountedReturn   251.833
+2018-01-21 21:37:54.087794 PST | AverageReturn             364.306
+2018-01-21 21:37:54.087915 PST | ExplainedVariance          -8.13006
+2018-01-21 21:37:54.088045 PST | NumTrajs                   68
+2018-01-21 21:37:54.088178 PST | Entropy                    24.1204
+2018-01-21 21:37:54.088296 PST | Perplexity                  2.9879e+10
+2018-01-21 21:37:54.088412 PST | StdReturn                 104.139
+2018-01-21 21:37:54.088528 PST | MaxReturn                 792.394
+2018-01-21 21:37:54.088644 PST | MinReturn                 155.156
+2018-01-21 21:37:54.088767 PST | AveragePolicyStd            0.999911
+2018-01-21 21:37:54.088893 PST | LossBefore               -190.08
+2018-01-21 21:37:54.089017 PST | LossAfter                -190.223
+2018-01-21 21:37:54.089146 PST | MeanKLBefore                0
+2018-01-21 21:37:54.089269 PST | MeanKL                      0.00643592
+2018-01-21 21:37:54.089385 PST | dLoss                       0.142731
+2018-01-21 21:37:54.089501 PST | AverageQLoss              129.982
+2018-01-21 21:37:54.089622 PST | AverageQ                  181.184
+2018-01-21 21:37:54.089743 PST | AverageAbsQ               181.227
+2018-01-21 21:37:54.089864 PST | AverageY                  181.209
+2018-01-21 21:37:54.089989 PST | AverageAbsY               181.223
+2018-01-21 21:37:54.090125 PST | AverageAbsQYDiff            7.85507
+2018-01-21 21:37:54.090254 PST | Time                     3193.52
+2018-01-21 21:37:54.090388 PST | ItrTime                    99.1418
+2018-01-21 21:37:54.090516 PST | -----------------------  -------------
+2018-01-21 21:37:54.291586 PST | itr #32 | Mem: 3445.644531
+2018-01-21 21:37:54.291831 PST | itr #32 | Obtaining samples...
+2018-01-21 21:37:54.291993 PST | itr #32 | Obtaining samples for iteration 32...
+2018-01-21 21:38:17.922256 PST | itr #32 | Processing samples...
+2018-01-21 21:38:18.207074 PST | itr #32 | Qprop, subtracting control variate
+2018-01-21 21:38:18.285573 PST | itr #32 | M-Qprop, subtracting values
+2018-01-21 21:38:18.296627 PST | itr #32 | fitting baseline...
+2018-01-21 21:38:23.812752 PST | itr #32 | fitted
+2018-01-21 21:38:23.813928 PST | itr #32 | Logging diagnostics...
+2018-01-21 21:38:23.815490 PST | itr #32 | Adding samples to replay pool...
+2018-01-21 21:38:23.939588 PST | itr #32 | PathsInfo epsN=70, meanL=71.56, maxL=153, minL=35
+2018-01-21 21:38:23.939809 PST | itr #32 | Put 5009 transitions to replay, size=166117
+2018-01-21 21:38:23.939948 PST | itr #32 | Optimizing critic before policy...
+2018-01-21 21:38:23.940090 PST | itr #32 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:39:32.413783 PST | itr #32 | Optimizing policy...
+2018-01-21 21:39:32.414025 PST | itr #32 | Computing loss before
+2018-01-21 21:39:32.509666 PST | itr #32 | Computing KL before
+2018-01-21 21:39:32.560033 PST | itr #32 | Optimizing
+2018-01-21 21:39:32.634137 PST | itr #32 | Start CG optimization: #parameters: 43634, #inputs: 5009, #subsample_inputs: 5009
+2018-01-21 21:39:32.752379 PST | itr #32 | computing loss before
+2018-01-21 21:39:32.810207 PST | itr #32 | performing update
+2018-01-21 21:39:32.810508 PST | itr #32 | computing gradient
+2018-01-21 21:39:32.937728 PST | itr #32 | gradient computed
+2018-01-21 21:39:32.937955 PST | itr #32 | computing descent direction
+2018-01-21 21:39:34.503002 PST | itr #32 | descent direction computed
+2018-01-21 21:39:34.584166 PST | itr #32 | backtrack iters: 0
+2018-01-21 21:39:34.584382 PST | itr #32 | computing loss after
+2018-01-21 21:39:34.584513 PST | itr #32 | optimization finished
+2018-01-21 21:39:34.803439 PST | itr #32 | Computing KL after
+2018-01-21 21:39:34.830754 PST | itr #32 | Computing loss after
+2018-01-21 21:39:34.929198 PST | itr #32 | Saved
+2018-01-21 21:39:34.932383 PST | -----------------------  --------------
+2018-01-21 21:39:34.932581 PST | PolicyExecTime              4.70528
+2018-01-21 21:39:34.932721 PST | EnvExecTime                18.485
+2018-01-21 21:39:34.932856 PST | ProcessExecTime             0.346731
+2018-01-21 21:39:34.932989 PST | AbsLearnSignalOld           0.614428
+2018-01-21 21:39:34.933121 PST | AbsLearnSignalNew           0.862074
+2018-01-21 21:39:34.933261 PST | AbsLearnSignal              0.862074
+2018-01-21 21:39:34.935298 PST | Iteration                  32
+2018-01-21 21:39:34.935460 PST | AverageDiscountedReturn   246.806
+2018-01-21 21:39:34.935605 PST | AverageReturn             351.275
+2018-01-21 21:39:34.935741 PST | ExplainedVariance           0.25764
+2018-01-21 21:39:34.935877 PST | NumTrajs                   70
+2018-01-21 21:39:34.936008 PST | Entropy                    24.1215
+2018-01-21 21:39:34.936139 PST | Perplexity                  2.99105e+10
+2018-01-21 21:39:34.936272 PST | StdReturn                  85.854
+2018-01-21 21:39:34.936415 PST | MaxReturn                 779.972
+2018-01-21 21:39:34.936546 PST | MinReturn                 171.381
+2018-01-21 21:39:34.936670 PST | AveragePolicyStd            0.999973
+2018-01-21 21:39:34.936793 PST | LossBefore               -189.141
+2018-01-21 21:39:34.936923 PST | LossAfter                -189.315
+2018-01-21 21:39:34.937061 PST | MeanKLBefore                0
+2018-01-21 21:39:34.937200 PST | MeanKL                      0.00999589
+2018-01-21 21:39:34.937337 PST | dLoss                       0.173676
+2018-01-21 21:39:34.937473 PST | AverageQLoss              133.394
+2018-01-21 21:39:34.937607 PST | AverageQ                  183.011
+2018-01-21 21:39:34.937741 PST | AverageAbsQ               183.056
+2018-01-21 21:39:34.937875 PST | AverageY                  183.033
+2018-01-21 21:39:34.938015 PST | AverageAbsY               183.047
+2018-01-21 21:39:34.938150 PST | AverageAbsQYDiff            7.90953
+2018-01-21 21:39:34.938287 PST | Time                     3294.37
+2018-01-21 21:39:34.938439 PST | ItrTime                   100.639
+2018-01-21 21:39:34.938577 PST | -----------------------  --------------
+2018-01-21 21:39:35.092722 PST | itr #33 | Mem: 3445.644531
+2018-01-21 21:39:35.092940 PST | itr #33 | Obtaining samples...
+2018-01-21 21:39:35.093087 PST | itr #33 | Obtaining samples for iteration 33...
+2018-01-21 21:40:00.863452 PST | itr #33 | Processing samples...
+2018-01-21 21:40:01.082888 PST | itr #33 | Qprop, subtracting control variate
+2018-01-21 21:40:01.161411 PST | itr #33 | M-Qprop, subtracting values
+2018-01-21 21:40:01.163129 PST | itr #33 | fitting baseline...
+2018-01-21 21:40:02.263146 PST | itr #33 | fitted
+2018-01-21 21:40:02.264447 PST | itr #33 | Logging diagnostics...
+2018-01-21 21:40:02.266095 PST | itr #33 | Adding samples to replay pool...
+2018-01-21 21:40:02.385319 PST | itr #33 | PathsInfo epsN=64, meanL=78.20, maxL=181, minL=44
+2018-01-21 21:40:02.385560 PST | itr #33 | Put 5005 transitions to replay, size=171122
+2018-01-21 21:40:02.385698 PST | itr #33 | Optimizing critic before policy...
+2018-01-21 21:40:02.385840 PST | itr #33 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:41:11.367513 PST | itr #33 | Optimizing policy...
+2018-01-21 21:41:11.367774 PST | itr #33 | Computing loss before
+2018-01-21 21:41:11.459129 PST | itr #33 | Computing KL before
+2018-01-21 21:41:11.485206 PST | itr #33 | Optimizing
+2018-01-21 21:41:11.563818 PST | itr #33 | Start CG optimization: #parameters: 43634, #inputs: 5005, #subsample_inputs: 5005
+2018-01-21 21:41:11.641925 PST | itr #33 | computing loss before
+2018-01-21 21:41:11.734752 PST | itr #33 | performing update
+2018-01-21 21:41:11.734972 PST | itr #33 | computing gradient
+2018-01-21 21:41:11.898810 PST | itr #33 | gradient computed
+2018-01-21 21:41:11.899031 PST | itr #33 | computing descent direction
+2018-01-21 21:41:13.713916 PST | itr #33 | descent direction computed
+2018-01-21 21:41:13.801117 PST | itr #33 | backtrack iters: 0
+2018-01-21 21:41:13.801337 PST | itr #33 | computing loss after
+2018-01-21 21:41:13.801471 PST | itr #33 | optimization finished
+2018-01-21 21:41:13.947799 PST | itr #33 | Computing KL after
+2018-01-21 21:41:13.991863 PST | itr #33 | Computing loss after
+2018-01-21 21:41:14.094774 PST | itr #33 | Saved
+2018-01-21 21:41:14.096071 PST | -----------------------  --------------
+2018-01-21 21:41:14.096231 PST | PolicyExecTime              5.63263
+2018-01-21 21:41:14.096355 PST | EnvExecTime                19.766
+2018-01-21 21:41:14.096474 PST | ProcessExecTime             0.243197
+2018-01-21 21:41:14.096601 PST | AbsLearnSignalOld           0.498083
+2018-01-21 21:41:14.096721 PST | AbsLearnSignalNew           0.851688
+2018-01-21 21:41:14.096838 PST | AbsLearnSignal              0.851688
+2018-01-21 21:41:14.096955 PST | Iteration                  33
+2018-01-21 21:41:14.097075 PST | AverageDiscountedReturn   263.424
+2018-01-21 21:41:14.097202 PST | AverageReturn             388.661
+2018-01-21 21:41:14.097320 PST | ExplainedVariance           0.0991924
+2018-01-21 21:41:14.097437 PST | NumTrajs                   64
+2018-01-21 21:41:14.097554 PST | Entropy                    24.1206
+2018-01-21 21:41:14.097670 PST | Perplexity                  2.98831e+10
+2018-01-21 21:41:14.097787 PST | StdReturn                 106.419
+2018-01-21 21:41:14.097904 PST | MaxReturn                 843.813
+2018-01-21 21:41:14.098020 PST | MinReturn                 194.592
+2018-01-21 21:41:14.098137 PST | AveragePolicyStd            0.999919
+2018-01-21 21:41:14.098253 PST | LossBefore               -189.55
+2018-01-21 21:41:14.098369 PST | LossAfter                -189.705
+2018-01-21 21:41:14.098485 PST | MeanKLBefore                0
+2018-01-21 21:41:14.098601 PST | MeanKL                      0.00992672
+2018-01-21 21:41:14.098717 PST | dLoss                       0.154373
+2018-01-21 21:41:14.098833 PST | AverageQLoss              133.032
+2018-01-21 21:41:14.098949 PST | AverageQ                  184.256
+2018-01-21 21:41:14.099066 PST | AverageAbsQ               184.297
+2018-01-21 21:41:14.099200 PST | AverageY                  184.278
+2018-01-21 21:41:14.099319 PST | AverageAbsY               184.291
+2018-01-21 21:41:14.099434 PST | AverageAbsQYDiff            7.8893
+2018-01-21 21:41:14.099557 PST | Time                     3393.53
+2018-01-21 21:41:14.099673 PST | ItrTime                    99.0023
+2018-01-21 21:41:14.099789 PST | -----------------------  --------------
+2018-01-21 21:41:14.240077 PST | itr #34 | Mem: 3445.644531
+2018-01-21 21:41:14.240284 PST | itr #34 | Obtaining samples...
+2018-01-21 21:41:14.240419 PST | itr #34 | Obtaining samples for iteration 34...
+2018-01-21 21:41:38.386790 PST | itr #34 | Processing samples...
+2018-01-21 21:41:38.826570 PST | itr #34 | Qprop, subtracting control variate
+2018-01-21 21:41:38.899501 PST | itr #34 | M-Qprop, subtracting values
+2018-01-21 21:41:38.902052 PST | itr #34 | fitting baseline...
+2018-01-21 21:41:42.676498 PST | itr #34 | fitted
+2018-01-21 21:41:42.680132 PST | itr #34 | Logging diagnostics...
+2018-01-21 21:41:42.700606 PST | itr #34 | Adding samples to replay pool...
+2018-01-21 21:41:42.831631 PST | itr #34 | PathsInfo epsN=68, meanL=73.79, maxL=138, minL=44
+2018-01-21 21:41:42.831909 PST | itr #34 | Put 5018 transitions to replay, size=176140
+2018-01-21 21:41:42.832068 PST | itr #34 | Optimizing critic before policy...
+2018-01-21 21:41:42.832232 PST | itr #34 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:42:50.692910 PST | itr #34 | Optimizing policy...
+2018-01-21 21:42:50.693149 PST | itr #34 | Computing loss before
+2018-01-21 21:42:50.751245 PST | itr #34 | Computing KL before
+2018-01-21 21:42:50.785192 PST | itr #34 | Optimizing
+2018-01-21 21:42:51.063463 PST | itr #34 | Start CG optimization: #parameters: 43634, #inputs: 5018, #subsample_inputs: 5018
+2018-01-21 21:42:51.319044 PST | itr #34 | computing loss before
+2018-01-21 21:42:51.391006 PST | itr #34 | performing update
+2018-01-21 21:42:51.391236 PST | itr #34 | computing gradient
+2018-01-21 21:42:51.500869 PST | itr #34 | gradient computed
+2018-01-21 21:42:51.501095 PST | itr #34 | computing descent direction
+2018-01-21 21:42:53.506373 PST | itr #34 | descent direction computed
+2018-01-21 21:42:53.638450 PST | itr #34 | backtrack iters: 1
+2018-01-21 21:42:53.638678 PST | itr #34 | computing loss after
+2018-01-21 21:42:53.638809 PST | itr #34 | optimization finished
+2018-01-21 21:42:53.968553 PST | itr #34 | Computing KL after
+2018-01-21 21:42:54.016833 PST | itr #34 | Computing loss after
+2018-01-21 21:42:54.168060 PST | itr #34 | Saved
+2018-01-21 21:42:54.174894 PST | -----------------------  --------------
+2018-01-21 21:42:54.178814 PST | PolicyExecTime              5.39134
+2018-01-21 21:42:54.179058 PST | EnvExecTime                18.4152
+2018-01-21 21:42:54.182396 PST | ProcessExecTime             0.242935
+2018-01-21 21:42:54.182545 PST | AbsLearnSignalOld           0.305418
+2018-01-21 21:42:54.182681 PST | AbsLearnSignalNew           0.840831
+2018-01-21 21:42:54.182807 PST | AbsLearnSignal              0.840831
+2018-01-21 21:42:54.182951 PST | Iteration                  34
+2018-01-21 21:42:54.183111 PST | AverageDiscountedReturn   251.402
+2018-01-21 21:42:54.185187 PST | AverageReturn             361.909
+2018-01-21 21:42:54.185341 PST | ExplainedVariance          -3.76807
+2018-01-21 21:42:54.185495 PST | NumTrajs                   68
+2018-01-21 21:42:54.185634 PST | Entropy                    24.1203
+2018-01-21 21:42:54.185774 PST | Perplexity                  2.98759e+10
+2018-01-21 21:42:54.188541 PST | StdReturn                  90.7671
+2018-01-21 21:42:54.188776 PST | MaxReturn                 661.422
+2018-01-21 21:42:54.188920 PST | MinReturn                 193.722
+2018-01-21 21:42:54.189056 PST | AveragePolicyStd            0.999905
+2018-01-21 21:42:54.189190 PST | LossBefore               -189.21
+2018-01-21 21:42:54.189323 PST | LossAfter                -189.33
+2018-01-21 21:42:54.189464 PST | MeanKLBefore                0
+2018-01-21 21:42:54.189595 PST | MeanKL                      0.00642726
+2018-01-21 21:42:54.189732 PST | dLoss                       0.119629
+2018-01-21 21:42:54.189879 PST | AverageQLoss              130.805
+2018-01-21 21:42:54.190013 PST | AverageQ                  185.213
+2018-01-21 21:42:54.196319 PST | AverageAbsQ               185.255
+2018-01-21 21:42:54.196467 PST | AverageY                  185.234
+2018-01-21 21:42:54.196609 PST | AverageAbsY               185.245
+2018-01-21 21:42:54.196751 PST | AverageAbsQYDiff            7.81827
+2018-01-21 21:42:54.196888 PST | Time                     3493.6
+2018-01-21 21:42:54.197029 PST | ItrTime                    99.9283
+2018-01-21 21:42:54.197152 PST | -----------------------  --------------
+2018-01-21 21:42:54.363783 PST | itr #35 | Mem: 3445.644531
+2018-01-21 21:42:54.364657 PST | itr #35 | Obtaining samples...
+2018-01-21 21:42:54.365477 PST | itr #35 | Obtaining samples for iteration 35...
+2018-01-21 21:43:20.753857 PST | itr #35 | Processing samples...
+2018-01-21 21:43:20.939723 PST | itr #35 | Qprop, subtracting control variate
+2018-01-21 21:43:21.042118 PST | itr #35 | M-Qprop, subtracting values
+2018-01-21 21:43:21.043842 PST | itr #35 | fitting baseline...
+2018-01-21 21:43:22.637892 PST | itr #35 | fitted
+2018-01-21 21:43:22.639104 PST | itr #35 | Logging diagnostics...
+2018-01-21 21:43:22.643185 PST | itr #35 | Adding samples to replay pool...
+2018-01-21 21:43:22.737241 PST | itr #35 | PathsInfo epsN=67, meanL=75.03, maxL=152, minL=45
+2018-01-21 21:43:22.737469 PST | itr #35 | Put 5027 transitions to replay, size=181167
+2018-01-21 21:43:22.737607 PST | itr #35 | Optimizing critic before policy...
+2018-01-21 21:43:22.737748 PST | itr #35 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:44:30.160685 PST | itr #35 | Optimizing policy...
+2018-01-21 21:44:30.160983 PST | itr #35 | Computing loss before
+2018-01-21 21:44:30.202506 PST | itr #35 | Computing KL before
+2018-01-21 21:44:30.229745 PST | itr #35 | Optimizing
+2018-01-21 21:44:30.308547 PST | itr #35 | Start CG optimization: #parameters: 43634, #inputs: 5027, #subsample_inputs: 5027
+2018-01-21 21:44:30.415688 PST | itr #35 | computing loss before
+2018-01-21 21:44:30.467252 PST | itr #35 | performing update
+2018-01-21 21:44:30.467484 PST | itr #35 | computing gradient
+2018-01-21 21:44:30.606513 PST | itr #35 | gradient computed
+2018-01-21 21:44:30.606722 PST | itr #35 | computing descent direction
+2018-01-21 21:44:32.174513 PST | itr #35 | descent direction computed
+2018-01-21 21:44:32.292828 PST | itr #35 | backtrack iters: 1
+2018-01-21 21:44:32.293055 PST | itr #35 | computing loss after
+2018-01-21 21:44:32.293207 PST | itr #35 | optimization finished
+2018-01-21 21:44:32.475278 PST | itr #35 | Computing KL after
+2018-01-21 21:44:32.512447 PST | itr #35 | Computing loss after
+2018-01-21 21:44:32.619208 PST | itr #35 | Saved
+2018-01-21 21:44:32.620629 PST | -----------------------  --------------
+2018-01-21 21:44:32.620806 PST | PolicyExecTime              6.20572
+2018-01-21 21:44:32.620945 PST | EnvExecTime                19.6769
+2018-01-21 21:44:32.621078 PST | ProcessExecTime             0.382476
+2018-01-21 21:44:32.621209 PST | AbsLearnSignalOld           0.227883
+2018-01-21 21:44:32.621339 PST | AbsLearnSignalNew           0.844731
+2018-01-21 21:44:32.621468 PST | AbsLearnSignal              0.844731
+2018-01-21 21:44:32.621606 PST | Iteration                  35
+2018-01-21 21:44:32.621727 PST | AverageDiscountedReturn   256.249
+2018-01-21 21:44:32.621848 PST | AverageReturn             371.597
+2018-01-21 21:44:32.621968 PST | ExplainedVariance          -3.42973
+2018-01-21 21:44:32.622087 PST | NumTrajs                   67
+2018-01-21 21:44:32.622214 PST | Entropy                    24.1212
+2018-01-21 21:44:32.622333 PST | Perplexity                  2.99029e+10
+2018-01-21 21:44:32.622453 PST | StdReturn                  96.1114
+2018-01-21 21:44:32.622573 PST | MaxReturn                 767.813
+2018-01-21 21:44:32.622693 PST | MinReturn                 194.681
+2018-01-21 21:44:32.622813 PST | AveragePolicyStd            0.999958
+2018-01-21 21:44:32.622933 PST | LossBefore               -189.896
+2018-01-21 21:44:32.623063 PST | LossAfter                -190.012
+2018-01-21 21:44:32.627362 PST | MeanKLBefore                0
+2018-01-21 21:44:32.627520 PST | MeanKL                      0.00640796
+2018-01-21 21:44:32.627675 PST | dLoss                       0.115997
+2018-01-21 21:44:32.627814 PST | AverageQLoss              131.49
+2018-01-21 21:44:32.627950 PST | AverageQ                  185.681
+2018-01-21 21:44:32.628083 PST | AverageAbsQ               185.722
+2018-01-21 21:44:32.628215 PST | AverageY                  185.704
+2018-01-21 21:44:32.628346 PST | AverageAbsY               185.716
+2018-01-21 21:44:32.628478 PST | AverageAbsQYDiff            7.83709
+2018-01-21 21:44:32.628609 PST | Time                     3592.06
+2018-01-21 21:44:32.628748 PST | ItrTime                    98.2557
+2018-01-21 21:44:32.628880 PST | -----------------------  --------------
+2018-01-21 21:44:32.803568 PST | itr #36 | Mem: 3445.644531
+2018-01-21 21:44:32.803793 PST | itr #36 | Obtaining samples...
+2018-01-21 21:44:32.803948 PST | itr #36 | Obtaining samples for iteration 36...
+2018-01-21 21:44:58.521895 PST | itr #36 | Processing samples...
+2018-01-21 21:44:58.711202 PST | itr #36 | Qprop, subtracting control variate
+2018-01-21 21:44:58.806537 PST | itr #36 | M-Qprop, subtracting values
+2018-01-21 21:44:58.808274 PST | itr #36 | fitting baseline...
+2018-01-21 21:45:02.000390 PST | itr #36 | fitted
+2018-01-21 21:45:02.001797 PST | itr #36 | Logging diagnostics...
+2018-01-21 21:45:02.013335 PST | itr #36 | Adding samples to replay pool...
+2018-01-21 21:45:02.335426 PST | itr #36 | PathsInfo epsN=67, meanL=75.57, maxL=156, minL=45
+2018-01-21 21:45:02.335675 PST | itr #36 | Put 5063 transitions to replay, size=186230
+2018-01-21 21:45:02.335819 PST | itr #36 | Optimizing critic before policy...
+2018-01-21 21:45:02.335967 PST | itr #36 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:46:11.615236 PST | itr #36 | Optimizing policy...
+2018-01-21 21:46:11.615486 PST | itr #36 | Computing loss before
+2018-01-21 21:46:11.676291 PST | itr #36 | Computing KL before
+2018-01-21 21:46:11.705978 PST | itr #36 | Optimizing
+2018-01-21 21:46:11.787382 PST | itr #36 | Start CG optimization: #parameters: 43634, #inputs: 5063, #subsample_inputs: 5063
+2018-01-21 21:46:11.872267 PST | itr #36 | computing loss before
+2018-01-21 21:46:11.930720 PST | itr #36 | performing update
+2018-01-21 21:46:11.930940 PST | itr #36 | computing gradient
+2018-01-21 21:46:12.060494 PST | itr #36 | gradient computed
+2018-01-21 21:46:12.060698 PST | itr #36 | computing descent direction
+2018-01-21 21:46:14.410685 PST | itr #36 | descent direction computed
+2018-01-21 21:46:14.522073 PST | itr #36 | backtrack iters: 1
+2018-01-21 21:46:14.522304 PST | itr #36 | computing loss after
+2018-01-21 21:46:14.522443 PST | itr #36 | optimization finished
+2018-01-21 21:46:14.884845 PST | itr #36 | Computing KL after
+2018-01-21 21:46:14.931978 PST | itr #36 | Computing loss after
+2018-01-21 21:46:15.142002 PST | itr #36 | Saved
+2018-01-21 21:46:15.143334 PST | -----------------------  --------------
+2018-01-21 21:46:15.143522 PST | PolicyExecTime              5.60936
+2018-01-21 21:46:15.143668 PST | EnvExecTime                19.7482
+2018-01-21 21:46:15.148177 PST | ProcessExecTime             0.250897
+2018-01-21 21:46:15.152024 PST | AbsLearnSignalOld           0.577153
+2018-01-21 21:46:15.153238 PST | AbsLearnSignalNew           0.859273
+2018-01-21 21:46:15.153381 PST | AbsLearnSignal              0.859273
+2018-01-21 21:46:15.155647 PST | Iteration                  36
+2018-01-21 21:46:15.155799 PST | AverageDiscountedReturn   252.547
+2018-01-21 21:46:15.155953 PST | AverageReturn             367.79
+2018-01-21 21:46:15.156097 PST | ExplainedVariance          -0.134068
+2018-01-21 21:46:15.156238 PST | NumTrajs                   67
+2018-01-21 21:46:15.156377 PST | Entropy                    24.1218
+2018-01-21 21:46:15.156514 PST | Perplexity                  2.99195e+10
+2018-01-21 21:46:15.156650 PST | StdReturn                 106.358
+2018-01-21 21:46:15.156784 PST | MaxReturn                 762.082
+2018-01-21 21:46:15.156930 PST | MinReturn                 201.855
+2018-01-21 21:46:15.157066 PST | AveragePolicyStd            0.999991
+2018-01-21 21:46:15.157214 PST | LossBefore               -178.906
+2018-01-21 21:46:15.157350 PST | LossAfter                -179.025
+2018-01-21 21:46:15.157488 PST | MeanKLBefore                0
+2018-01-21 21:46:15.157629 PST | MeanKL                      0.0064663
+2018-01-21 21:46:15.157767 PST | dLoss                       0.118851
+2018-01-21 21:46:15.157902 PST | AverageQLoss              132.055
+2018-01-21 21:46:15.158037 PST | AverageQ                  185.038
+2018-01-21 21:46:15.158177 PST | AverageAbsQ               185.084
+2018-01-21 21:46:15.158311 PST | AverageY                  185.06
+2018-01-21 21:46:15.158444 PST | AverageAbsY               185.073
+2018-01-21 21:46:15.158584 PST | AverageAbsQYDiff            7.84122
+2018-01-21 21:46:15.158723 PST | Time                     3694.58
+2018-01-21 21:46:15.158862 PST | ItrTime                   102.339
+2018-01-21 21:46:15.159002 PST | -----------------------  --------------
+2018-01-21 21:46:15.349845 PST | itr #37 | Mem: 3445.644531
+2018-01-21 21:46:15.353773 PST | itr #37 | Obtaining samples...
+2018-01-21 21:46:15.353934 PST | itr #37 | Obtaining samples for iteration 37...
+2018-01-21 21:46:39.680372 PST | itr #37 | Processing samples...
+2018-01-21 21:46:39.879793 PST | itr #37 | Qprop, subtracting control variate
+2018-01-21 21:46:39.953932 PST | itr #37 | M-Qprop, subtracting values
+2018-01-21 21:46:39.955671 PST | itr #37 | fitting baseline...
+2018-01-21 21:46:40.731976 PST | itr #37 | fitted
+2018-01-21 21:46:40.733256 PST | itr #37 | Logging diagnostics...
+2018-01-21 21:46:40.734945 PST | itr #37 | Adding samples to replay pool...
+2018-01-21 21:46:40.842806 PST | itr #37 | PathsInfo epsN=65, meanL=77.23, maxL=137, minL=41
+2018-01-21 21:46:40.843033 PST | itr #37 | Put 5020 transitions to replay, size=191250
+2018-01-21 21:46:40.868893 PST | itr #37 | Optimizing critic before policy...
+2018-01-21 21:46:40.869058 PST | itr #37 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:47:48.920126 PST | itr #37 | Optimizing policy...
+2018-01-21 21:47:48.920383 PST | itr #37 | Computing loss before
+2018-01-21 21:47:48.972345 PST | itr #37 | Computing KL before
+2018-01-21 21:47:49.003055 PST | itr #37 | Optimizing
+2018-01-21 21:47:49.282035 PST | itr #37 | Start CG optimization: #parameters: 43634, #inputs: 5020, #subsample_inputs: 5020
+2018-01-21 21:47:49.746866 PST | itr #37 | computing loss before
+2018-01-21 21:47:49.827577 PST | itr #37 | performing update
+2018-01-21 21:47:49.827837 PST | itr #37 | computing gradient
+2018-01-21 21:47:49.996014 PST | itr #37 | gradient computed
+2018-01-21 21:47:49.996228 PST | itr #37 | computing descent direction
+2018-01-21 21:47:51.676177 PST | itr #37 | descent direction computed
+2018-01-21 21:47:51.791821 PST | itr #37 | backtrack iters: 1
+2018-01-21 21:47:51.792051 PST | itr #37 | computing loss after
+2018-01-21 21:47:51.792200 PST | itr #37 | optimization finished
+2018-01-21 21:47:51.992550 PST | itr #37 | Computing KL after
+2018-01-21 21:47:52.037176 PST | itr #37 | Computing loss after
+2018-01-21 21:47:52.111032 PST | itr #37 | Saved
+2018-01-21 21:47:52.112414 PST | -----------------------  --------------
+2018-01-21 21:47:52.112589 PST | PolicyExecTime              5.87192
+2018-01-21 21:47:52.112732 PST | EnvExecTime                18.11
+2018-01-21 21:47:52.112873 PST | ProcessExecTime             0.215241
+2018-01-21 21:47:52.113010 PST | AbsLearnSignalOld           0.331737
+2018-01-21 21:47:52.113154 PST | AbsLearnSignalNew           0.857139
+2018-01-21 21:47:52.113279 PST | AbsLearnSignal              0.857139
+2018-01-21 21:47:52.113403 PST | Iteration                  37
+2018-01-21 21:47:52.113524 PST | AverageDiscountedReturn   259.599
+2018-01-21 21:47:52.113653 PST | AverageReturn             381.014
+2018-01-21 21:47:52.113786 PST | ExplainedVariance          -1.08667
+2018-01-21 21:47:52.113922 PST | NumTrajs                   65
+2018-01-21 21:47:52.114071 PST | Entropy                    24.1214
+2018-01-21 21:47:52.114208 PST | Perplexity                  2.99068e+10
+2018-01-21 21:47:52.114343 PST | StdReturn                 102.69
+2018-01-21 21:47:52.114480 PST | MaxReturn                 708.45
+2018-01-21 21:47:52.114620 PST | MinReturn                 208.798
+2018-01-21 21:47:52.114753 PST | AveragePolicyStd            0.999966
+2018-01-21 21:47:52.114892 PST | LossBefore               -187.069
+2018-01-21 21:47:52.115034 PST | LossAfter                -187.181
+2018-01-21 21:47:52.115192 PST | MeanKLBefore                0
+2018-01-21 21:47:52.115329 PST | MeanKL                      0.00640267
+2018-01-21 21:47:52.115463 PST | dLoss                       0.111801
+2018-01-21 21:47:52.115598 PST | AverageQLoss              129.511
+2018-01-21 21:47:52.115733 PST | AverageQ                  184.822
+2018-01-21 21:47:52.115874 PST | AverageAbsQ               184.864
+2018-01-21 21:47:52.116011 PST | AverageY                  184.842
+2018-01-21 21:47:52.116154 PST | AverageAbsY               184.854
+2018-01-21 21:47:52.116294 PST | AverageAbsQYDiff            7.76864
+2018-01-21 21:47:52.116429 PST | Time                     3791.55
+2018-01-21 21:47:52.116562 PST | ItrTime                    96.7615
+2018-01-21 21:47:52.116693 PST | -----------------------  --------------
+2018-01-21 21:47:52.299093 PST | itr #38 | Mem: 3445.644531
+2018-01-21 21:47:52.299356 PST | itr #38 | Obtaining samples...
+2018-01-21 21:47:52.299511 PST | itr #38 | Obtaining samples for iteration 38...
+2018-01-21 21:48:16.220491 PST | itr #38 | Processing samples...
+2018-01-21 21:48:16.415031 PST | itr #38 | Qprop, subtracting control variate
+2018-01-21 21:48:16.499066 PST | itr #38 | M-Qprop, subtracting values
+2018-01-21 21:48:16.500891 PST | itr #38 | fitting baseline...
+2018-01-21 21:48:18.443121 PST | itr #38 | fitted
+2018-01-21 21:48:18.444324 PST | itr #38 | Logging diagnostics...
+2018-01-21 21:48:18.453882 PST | itr #38 | Adding samples to replay pool...
+2018-01-21 21:48:18.601962 PST | itr #38 | PathsInfo epsN=66, meanL=76.65, maxL=129, minL=48
+2018-01-21 21:48:18.602184 PST | itr #38 | Put 5059 transitions to replay, size=196309
+2018-01-21 21:48:18.602320 PST | itr #38 | Optimizing critic before policy...
+2018-01-21 21:48:18.602458 PST | itr #38 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:49:29.793297 PST | itr #38 | Optimizing policy...
+2018-01-21 21:49:29.793543 PST | itr #38 | Computing loss before
+2018-01-21 21:49:29.846194 PST | itr #38 | Computing KL before
+2018-01-21 21:49:29.871797 PST | itr #38 | Optimizing
+2018-01-21 21:49:29.953730 PST | itr #38 | Start CG optimization: #parameters: 43634, #inputs: 5059, #subsample_inputs: 5059
+2018-01-21 21:49:30.074596 PST | itr #38 | computing loss before
+2018-01-21 21:49:30.146174 PST | itr #38 | performing update
+2018-01-21 21:49:30.146398 PST | itr #38 | computing gradient
+2018-01-21 21:49:30.265231 PST | itr #38 | gradient computed
+2018-01-21 21:49:30.265459 PST | itr #38 | computing descent direction
+2018-01-21 21:49:32.056174 PST | itr #38 | descent direction computed
+2018-01-21 21:49:32.206167 PST | itr #38 | backtrack iters: 1
+2018-01-21 21:49:32.206377 PST | itr #38 | computing loss after
+2018-01-21 21:49:32.206502 PST | itr #38 | optimization finished
+2018-01-21 21:49:32.328234 PST | itr #38 | Computing KL after
+2018-01-21 21:49:32.379850 PST | itr #38 | Computing loss after
+2018-01-21 21:49:32.506169 PST | itr #38 | Saved
+2018-01-21 21:49:32.508556 PST | -----------------------  --------------
+2018-01-21 21:49:32.509220 PST | PolicyExecTime              5.25771
+2018-01-21 21:49:32.509349 PST | EnvExecTime                18.3789
+2018-01-21 21:49:32.509474 PST | ProcessExecTime             0.20617
+2018-01-21 21:49:32.509604 PST | AbsLearnSignalOld           0.487539
+2018-01-21 21:49:32.509726 PST | AbsLearnSignalNew           0.862492
+2018-01-21 21:49:32.509847 PST | AbsLearnSignal              0.862492
+2018-01-21 21:49:32.509966 PST | Iteration                  38
+2018-01-21 21:49:32.510088 PST | AverageDiscountedReturn   261.379
+2018-01-21 21:49:32.510220 PST | AverageReturn             381.367
+2018-01-21 21:49:32.510342 PST | ExplainedVariance          -0.623979
+2018-01-21 21:49:32.510462 PST | NumTrajs                   66
+2018-01-21 21:49:32.512125 PST | Entropy                    24.1219
+2018-01-21 21:49:32.512249 PST | Perplexity                  2.99224e+10
+2018-01-21 21:49:32.512370 PST | StdReturn                  91.2229
+2018-01-21 21:49:32.512490 PST | MaxReturn                 659.622
+2018-01-21 21:49:32.512609 PST | MinReturn                 244.549
+2018-01-21 21:49:32.512728 PST | AveragePolicyStd            0.999997
+2018-01-21 21:49:32.512848 PST | LossBefore               -177.318
+2018-01-21 21:49:32.512966 PST | LossAfter                -177.444
+2018-01-21 21:49:32.513086 PST | MeanKLBefore                0
+2018-01-21 21:49:32.513204 PST | MeanKL                      0.00641687
+2018-01-21 21:49:32.513323 PST | dLoss                       0.125488
+2018-01-21 21:49:32.513442 PST | AverageQLoss              125.907
+2018-01-21 21:49:32.513560 PST | AverageQ                  183.386
+2018-01-21 21:49:32.513678 PST | AverageAbsQ               183.426
+2018-01-21 21:49:32.513797 PST | AverageY                  183.406
+2018-01-21 21:49:32.513916 PST | AverageAbsY               183.418
+2018-01-21 21:49:32.514034 PST | AverageAbsQYDiff            7.70829
+2018-01-21 21:49:32.514152 PST | Time                     3891.94
+2018-01-21 21:49:32.514272 PST | ItrTime                   100.207
+2018-01-21 21:49:32.514391 PST | -----------------------  --------------
+2018-01-21 21:49:32.654985 PST | itr #39 | Mem: 3445.644531
+2018-01-21 21:49:32.655210 PST | itr #39 | Obtaining samples...
+2018-01-21 21:49:32.655347 PST | itr #39 | Obtaining samples for iteration 39...
+2018-01-21 21:49:56.562816 PST | itr #39 | Processing samples...
+2018-01-21 21:49:56.758504 PST | itr #39 | Qprop, subtracting control variate
+2018-01-21 21:49:56.818073 PST | itr #39 | M-Qprop, subtracting values
+2018-01-21 21:49:56.819921 PST | itr #39 | fitting baseline...
+2018-01-21 21:49:58.187322 PST | itr #39 | fitted
+2018-01-21 21:49:58.188548 PST | itr #39 | Logging diagnostics...
+2018-01-21 21:49:58.209632 PST | itr #39 | Adding samples to replay pool...
+2018-01-21 21:49:58.395174 PST | itr #39 | PathsInfo epsN=66, meanL=76.14, maxL=150, minL=46
+2018-01-21 21:49:58.395444 PST | itr #39 | Put 5025 transitions to replay, size=201334
+2018-01-21 21:49:58.395619 PST | itr #39 | Optimizing critic before policy...
+2018-01-21 21:49:58.395782 PST | itr #39 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:51:09.645937 PST | itr #39 | Optimizing policy...
+2018-01-21 21:51:09.646194 PST | itr #39 | Computing loss before
+2018-01-21 21:51:09.727350 PST | itr #39 | Computing KL before
+2018-01-21 21:51:09.757180 PST | itr #39 | Optimizing
+2018-01-21 21:51:09.901115 PST | itr #39 | Start CG optimization: #parameters: 43634, #inputs: 5025, #subsample_inputs: 5025
+2018-01-21 21:51:10.174503 PST | itr #39 | computing loss before
+2018-01-21 21:51:10.264559 PST | itr #39 | performing update
+2018-01-21 21:51:10.264783 PST | itr #39 | computing gradient
+2018-01-21 21:51:10.389857 PST | itr #39 | gradient computed
+2018-01-21 21:51:10.390085 PST | itr #39 | computing descent direction
+2018-01-21 21:51:12.207538 PST | itr #39 | descent direction computed
+2018-01-21 21:51:12.274601 PST | itr #39 | backtrack iters: 0
+2018-01-21 21:51:12.274829 PST | itr #39 | computing loss after
+2018-01-21 21:51:12.274959 PST | itr #39 | optimization finished
+2018-01-21 21:51:12.417812 PST | itr #39 | Computing KL after
+2018-01-21 21:51:12.447950 PST | itr #39 | Computing loss after
+2018-01-21 21:51:12.545901 PST | itr #39 | Saved
+2018-01-21 21:51:12.547309 PST | -----------------------  --------------
+2018-01-21 21:51:12.547479 PST | PolicyExecTime              5.17924
+2018-01-21 21:51:12.547607 PST | EnvExecTime                18.4481
+2018-01-21 21:51:12.547729 PST | ProcessExecTime             0.186374
+2018-01-21 21:51:12.547852 PST | AbsLearnSignalOld           0.193083
+2018-01-21 21:51:12.547984 PST | AbsLearnSignalNew           0.827785
+2018-01-21 21:51:12.548111 PST | AbsLearnSignal              0.827785
+2018-01-21 21:51:12.548234 PST | Iteration                  39
+2018-01-21 21:51:12.548357 PST | AverageDiscountedReturn   254.484
+2018-01-21 21:51:12.548479 PST | AverageReturn             369.3
+2018-01-21 21:51:12.548601 PST | ExplainedVariance          -6.25222
+2018-01-21 21:51:12.548722 PST | NumTrajs                   66
+2018-01-21 21:51:12.548844 PST | Entropy                    24.1222
+2018-01-21 21:51:12.548965 PST | Perplexity                  2.99333e+10
+2018-01-21 21:51:12.549087 PST | StdReturn                  96.1332
+2018-01-21 21:51:12.549208 PST | MaxReturn                 716.162
+2018-01-21 21:51:12.549332 PST | MinReturn                 240.761
+2018-01-21 21:51:12.549453 PST | AveragePolicyStd            1.00002
+2018-01-21 21:51:12.549578 PST | LossBefore               -178.49
+2018-01-21 21:51:12.549700 PST | LossAfter                -178.623
+2018-01-21 21:51:12.549822 PST | MeanKLBefore                0
+2018-01-21 21:51:12.549943 PST | MeanKL                      0.00996138
+2018-01-21 21:51:12.550065 PST | dLoss                       0.132828
+2018-01-21 21:51:12.550186 PST | AverageQLoss              123.702
+2018-01-21 21:51:12.550306 PST | AverageQ                  182.047
+2018-01-21 21:51:12.550426 PST | AverageAbsQ               182.095
+2018-01-21 21:51:12.550547 PST | AverageY                  182.066
+2018-01-21 21:51:12.550695 PST | AverageAbsY               182.083
+2018-01-21 21:51:12.550832 PST | AverageAbsQYDiff            7.66746
+2018-01-21 21:51:12.550958 PST | Time                     3991.98
+2018-01-21 21:51:12.551085 PST | ItrTime                    99.8912
+2018-01-21 21:51:12.551221 PST | -----------------------  --------------
+2018-01-21 21:51:12.691894 PST | itr #40 | Mem: 3445.644531
+2018-01-21 21:51:12.692108 PST | itr #40 | Obtaining samples...
+2018-01-21 21:51:12.692248 PST | itr #40 | Obtaining samples for iteration 40...
+2018-01-21 21:51:38.889037 PST | itr #40 | Processing samples...
+2018-01-21 21:51:39.329068 PST | itr #40 | Qprop, subtracting control variate
+2018-01-21 21:51:39.417966 PST | itr #40 | M-Qprop, subtracting values
+2018-01-21 21:51:39.428191 PST | itr #40 | fitting baseline...
+2018-01-21 21:51:41.830468 PST | itr #40 | fitted
+2018-01-21 21:51:41.836271 PST | itr #40 | Logging diagnostics...
+2018-01-21 21:51:41.837972 PST | itr #40 | Adding samples to replay pool...
+2018-01-21 21:51:41.935952 PST | itr #40 | PathsInfo epsN=65, meanL=77.26, maxL=142, minL=48
+2018-01-21 21:51:41.936246 PST | itr #40 | Put 5022 transitions to replay, size=206356
+2018-01-21 21:51:41.936395 PST | itr #40 | Optimizing critic before policy...
+2018-01-21 21:51:41.936548 PST | itr #40 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:52:51.070015 PST | itr #40 | Optimizing policy...
+2018-01-21 21:52:51.070279 PST | itr #40 | Computing loss before
+2018-01-21 21:52:51.127970 PST | itr #40 | Computing KL before
+2018-01-21 21:52:51.157333 PST | itr #40 | Optimizing
+2018-01-21 21:52:51.312517 PST | itr #40 | Start CG optimization: #parameters: 43634, #inputs: 5022, #subsample_inputs: 5022
+2018-01-21 21:52:51.462365 PST | itr #40 | computing loss before
+2018-01-21 21:52:51.529255 PST | itr #40 | performing update
+2018-01-21 21:52:51.529479 PST | itr #40 | computing gradient
+2018-01-21 21:52:51.625821 PST | itr #40 | gradient computed
+2018-01-21 21:52:51.626051 PST | itr #40 | computing descent direction
+2018-01-21 21:52:53.188747 PST | itr #40 | descent direction computed
+2018-01-21 21:52:53.235101 PST | itr #40 | backtrack iters: 0
+2018-01-21 21:52:53.235291 PST | itr #40 | computing loss after
+2018-01-21 21:52:53.235368 PST | itr #40 | optimization finished
+2018-01-21 21:52:53.357656 PST | itr #40 | Computing KL after
+2018-01-21 21:52:53.387458 PST | itr #40 | Computing loss after
+2018-01-21 21:52:53.487094 PST | itr #40 | Saved
+2018-01-21 21:52:53.492463 PST | -----------------------  --------------
+2018-01-21 21:52:53.492681 PST | PolicyExecTime              6.4452
+2018-01-21 21:52:53.492858 PST | EnvExecTime                19.4429
+2018-01-21 21:52:53.492995 PST | ProcessExecTime             0.228585
+2018-01-21 21:52:53.493129 PST | AbsLearnSignalOld           0.22832
+2018-01-21 21:52:53.493261 PST | AbsLearnSignalNew           0.83072
+2018-01-21 21:52:53.493388 PST | AbsLearnSignal              0.83072
+2018-01-21 21:52:53.493791 PST | Iteration                  40
+2018-01-21 21:52:53.493919 PST | AverageDiscountedReturn   263.219
+2018-01-21 21:52:53.494047 PST | AverageReturn             385.394
+2018-01-21 21:52:53.494174 PST | ExplainedVariance          -8.678
+2018-01-21 21:52:53.494302 PST | NumTrajs                   65
+2018-01-21 21:52:53.494430 PST | Entropy                    24.121
+2018-01-21 21:52:53.494566 PST | Perplexity                  2.98978e+10
+2018-01-21 21:52:53.494702 PST | StdReturn                  90.105
+2018-01-21 21:52:53.494833 PST | MaxReturn                 648.653
+2018-01-21 21:52:53.494956 PST | MinReturn                 234.368
+2018-01-21 21:52:53.495494 PST | AveragePolicyStd            0.999949
+2018-01-21 21:52:53.495636 PST | LossBefore               -180.633
+2018-01-21 21:52:53.495768 PST | LossAfter                -180.763
+2018-01-21 21:52:53.495898 PST | MeanKLBefore                0
+2018-01-21 21:52:53.496039 PST | MeanKL                      0.00991684
+2018-01-21 21:52:53.496175 PST | dLoss                       0.129211
+2018-01-21 21:52:53.499287 PST | AverageQLoss              120.366
+2018-01-21 21:52:53.499489 PST | AverageQ                  180.723
+2018-01-21 21:52:53.499620 PST | AverageAbsQ               180.77
+2018-01-21 21:52:53.499743 PST | AverageY                  180.741
+2018-01-21 21:52:53.499871 PST | AverageAbsY               180.757
+2018-01-21 21:52:53.500534 PST | AverageAbsQYDiff            7.55585
+2018-01-21 21:52:53.500740 PST | Time                     4092.92
+2018-01-21 21:52:53.500899 PST | ItrTime                   100.796
+2018-01-21 21:52:53.501064 PST | -----------------------  --------------
+2018-01-21 21:52:53.683434 PST | itr #41 | Mem: 3445.644531
+2018-01-21 21:52:53.683659 PST | itr #41 | Obtaining samples...
+2018-01-21 21:52:53.683798 PST | itr #41 | Obtaining samples for iteration 41...
+2018-01-21 21:53:17.993826 PST | itr #41 | Processing samples...
+2018-01-21 21:53:18.250108 PST | itr #41 | Qprop, subtracting control variate
+2018-01-21 21:53:18.307029 PST | itr #41 | M-Qprop, subtracting values
+2018-01-21 21:53:18.308784 PST | itr #41 | fitting baseline...
+2018-01-21 21:53:22.283086 PST | itr #41 | fitted
+2018-01-21 21:53:22.285006 PST | itr #41 | Logging diagnostics...
+2018-01-21 21:53:22.286641 PST | itr #41 | Adding samples to replay pool...
+2018-01-21 21:53:22.434599 PST | itr #41 | PathsInfo epsN=67, meanL=75.21, maxL=102, minL=42
+2018-01-21 21:53:22.434843 PST | itr #41 | Put 5039 transitions to replay, size=211395
+2018-01-21 21:53:22.434981 PST | itr #41 | Optimizing critic before policy...
+2018-01-21 21:53:22.435133 PST | itr #41 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:54:29.922151 PST | itr #41 | Optimizing policy...
+2018-01-21 21:54:29.922423 PST | itr #41 | Computing loss before
+2018-01-21 21:54:29.978956 PST | itr #41 | Computing KL before
+2018-01-21 21:54:30.004779 PST | itr #41 | Optimizing
+2018-01-21 21:54:30.103297 PST | itr #41 | Start CG optimization: #parameters: 43634, #inputs: 5039, #subsample_inputs: 5039
+2018-01-21 21:54:30.190507 PST | itr #41 | computing loss before
+2018-01-21 21:54:30.252977 PST | itr #41 | performing update
+2018-01-21 21:54:30.253117 PST | itr #41 | computing gradient
+2018-01-21 21:54:30.370434 PST | itr #41 | gradient computed
+2018-01-21 21:54:30.370698 PST | itr #41 | computing descent direction
+2018-01-21 21:54:32.098687 PST | itr #41 | descent direction computed
+2018-01-21 21:54:32.195549 PST | itr #41 | backtrack iters: 0
+2018-01-21 21:54:32.195781 PST | itr #41 | computing loss after
+2018-01-21 21:54:32.195928 PST | itr #41 | optimization finished
+2018-01-21 21:54:32.596433 PST | itr #41 | Computing KL after
+2018-01-21 21:54:32.645459 PST | itr #41 | Computing loss after
+2018-01-21 21:54:32.759202 PST | itr #41 | Saved
+2018-01-21 21:54:32.760488 PST | -----------------------  --------------
+2018-01-21 21:54:32.760639 PST | PolicyExecTime              6.27356
+2018-01-21 21:54:32.760762 PST | EnvExecTime                17.6213
+2018-01-21 21:54:32.760882 PST | ProcessExecTime             0.318817
+2018-01-21 21:54:32.761017 PST | AbsLearnSignalOld           0.532033
+2018-01-21 21:54:32.761149 PST | AbsLearnSignalNew           0.859682
+2018-01-21 21:54:32.761285 PST | AbsLearnSignal              0.859682
+2018-01-21 21:54:32.761421 PST | Iteration                  41
+2018-01-21 21:54:32.761545 PST | AverageDiscountedReturn   258.106
+2018-01-21 21:54:32.761666 PST | AverageReturn             372.727
+2018-01-21 21:54:32.761789 PST | ExplainedVariance           0.160327
+2018-01-21 21:54:32.761923 PST | NumTrajs                   67
+2018-01-21 21:54:32.762052 PST | Entropy                    24.1211
+2018-01-21 21:54:32.762186 PST | Perplexity                  2.98985e+10
+2018-01-21 21:54:32.762317 PST | StdReturn                  75.3297
+2018-01-21 21:54:32.762446 PST | MaxReturn                 536.696
+2018-01-21 21:54:32.762579 PST | MinReturn                 198.837
+2018-01-21 21:54:32.762709 PST | AveragePolicyStd            0.999951
+2018-01-21 21:54:32.762838 PST | LossBefore               -173.395
+2018-01-21 21:54:32.762964 PST | LossAfter                -173.516
+2018-01-21 21:54:32.763091 PST | MeanKLBefore                0
+2018-01-21 21:54:32.767362 PST | MeanKL                      0.00992954
+2018-01-21 21:54:32.767503 PST | dLoss                       0.121674
+2018-01-21 21:54:32.767673 PST | AverageQLoss              117.58
+2018-01-21 21:54:32.767842 PST | AverageQ                  178.82
+2018-01-21 21:54:32.767991 PST | AverageAbsQ               178.869
+2018-01-21 21:54:32.768135 PST | AverageY                  178.839
+2018-01-21 21:54:32.768271 PST | AverageAbsY               178.855
+2018-01-21 21:54:32.768401 PST | AverageAbsQYDiff            7.46771
+2018-01-21 21:54:32.768529 PST | Time                     4192.2
+2018-01-21 21:54:32.768656 PST | ItrTime                    99.076
+2018-01-21 21:54:32.768785 PST | -----------------------  --------------
+2018-01-21 21:54:32.943228 PST | itr #42 | Mem: 3445.644531
+2018-01-21 21:54:32.943471 PST | itr #42 | Obtaining samples...
+2018-01-21 21:54:32.943622 PST | itr #42 | Obtaining samples for iteration 42...
+2018-01-21 21:54:56.094864 PST | itr #42 | Processing samples...
+2018-01-21 21:54:56.299562 PST | itr #42 | Qprop, subtracting control variate
+2018-01-21 21:54:56.347787 PST | itr #42 | M-Qprop, subtracting values
+2018-01-21 21:54:56.349468 PST | itr #42 | fitting baseline...
+2018-01-21 21:55:00.056088 PST | itr #42 | fitted
+2018-01-21 21:55:00.072995 PST | itr #42 | Logging diagnostics...
+2018-01-21 21:55:00.074704 PST | itr #42 | Adding samples to replay pool...
+2018-01-21 21:55:00.239752 PST | itr #42 | PathsInfo epsN=63, meanL=80.35, maxL=130, minL=47
+2018-01-21 21:55:00.239980 PST | itr #42 | Put 5062 transitions to replay, size=216457
+2018-01-21 21:55:00.240117 PST | itr #42 | Optimizing critic before policy...
+2018-01-21 21:55:00.240259 PST | itr #42 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:56:11.137371 PST | itr #42 | Optimizing policy...
+2018-01-21 21:56:11.137658 PST | itr #42 | Computing loss before
+2018-01-21 21:56:11.184319 PST | itr #42 | Computing KL before
+2018-01-21 21:56:11.212114 PST | itr #42 | Optimizing
+2018-01-21 21:56:11.409108 PST | itr #42 | Start CG optimization: #parameters: 43634, #inputs: 5062, #subsample_inputs: 5062
+2018-01-21 21:56:11.667384 PST | itr #42 | computing loss before
+2018-01-21 21:56:11.740875 PST | itr #42 | performing update
+2018-01-21 21:56:11.741108 PST | itr #42 | computing gradient
+2018-01-21 21:56:11.834461 PST | itr #42 | gradient computed
+2018-01-21 21:56:11.834694 PST | itr #42 | computing descent direction
+2018-01-21 21:56:13.271855 PST | itr #42 | descent direction computed
+2018-01-21 21:56:13.358518 PST | itr #42 | backtrack iters: 0
+2018-01-21 21:56:13.358754 PST | itr #42 | computing loss after
+2018-01-21 21:56:13.358897 PST | itr #42 | optimization finished
+2018-01-21 21:56:13.534362 PST | itr #42 | Computing KL after
+2018-01-21 21:56:13.579139 PST | itr #42 | Computing loss after
+2018-01-21 21:56:13.698288 PST | itr #42 | Saved
+2018-01-21 21:56:13.699590 PST | -----------------------  -------------
+2018-01-21 21:56:13.699757 PST | PolicyExecTime              5.6065
+2018-01-21 21:56:13.699891 PST | EnvExecTime                17.1864
+2018-01-21 21:56:13.700018 PST | ProcessExecTime             0.241948
+2018-01-21 21:56:13.700142 PST | AbsLearnSignalOld           0.403718
+2018-01-21 21:56:13.700266 PST | AbsLearnSignalNew           0.8533
+2018-01-21 21:56:13.700401 PST | AbsLearnSignal              0.8533
+2018-01-21 21:56:13.700529 PST | Iteration                  42
+2018-01-21 21:56:13.700661 PST | AverageDiscountedReturn   265.845
+2018-01-21 21:56:13.700804 PST | AverageReturn             394.018
+2018-01-21 21:56:13.700943 PST | ExplainedVariance          -0.17906
+2018-01-21 21:56:13.701083 PST | NumTrajs                   63
+2018-01-21 21:56:13.701227 PST | Entropy                    24.1254
+2018-01-21 21:56:13.701352 PST | Perplexity                  3.0027e+10
+2018-01-21 21:56:13.701470 PST | StdReturn                  99.3624
+2018-01-21 21:56:13.701587 PST | MaxReturn                 656.483
+2018-01-21 21:56:13.701710 PST | MinReturn                 250.947
+2018-01-21 21:56:13.701835 PST | AveragePolicyStd            1.0002
+2018-01-21 21:56:13.701960 PST | LossBefore               -174.506
+2018-01-21 21:56:13.702082 PST | LossAfter                -174.628
+2018-01-21 21:56:13.702206 PST | MeanKLBefore                0
+2018-01-21 21:56:13.702340 PST | MeanKL                      0.00999699
+2018-01-21 21:56:13.702464 PST | dLoss                       0.122833
+2018-01-21 21:56:13.702582 PST | AverageQLoss              115.551
+2018-01-21 21:56:13.702698 PST | AverageQ                  178.185
+2018-01-21 21:56:13.702816 PST | AverageAbsQ               178.238
+2018-01-21 21:56:13.702933 PST | AverageY                  178.2
+2018-01-21 21:56:13.703048 PST | AverageAbsY               178.222
+2018-01-21 21:56:13.703174 PST | AverageAbsQYDiff            7.36867
+2018-01-21 21:56:13.703302 PST | Time                     4293.13
+2018-01-21 21:56:13.703419 PST | ItrTime                   100.755
+2018-01-21 21:56:13.703543 PST | -----------------------  -------------
+2018-01-21 21:56:13.899962 PST | itr #43 | Mem: 3445.644531
+2018-01-21 21:56:13.900198 PST | itr #43 | Obtaining samples...
+2018-01-21 21:56:13.900360 PST | itr #43 | Obtaining samples for iteration 43...
+2018-01-21 21:56:38.417350 PST | itr #43 | Processing samples...
+2018-01-21 21:56:38.524070 PST | itr #43 | Qprop, subtracting control variate
+2018-01-21 21:56:38.629051 PST | itr #43 | M-Qprop, subtracting values
+2018-01-21 21:56:38.630803 PST | itr #43 | fitting baseline...
+2018-01-21 21:56:39.659673 PST | itr #43 | fitted
+2018-01-21 21:56:39.663767 PST | itr #43 | Logging diagnostics...
+2018-01-21 21:56:39.665456 PST | itr #43 | Adding samples to replay pool...
+2018-01-21 21:56:39.813532 PST | itr #43 | PathsInfo epsN=67, meanL=76.79, maxL=154, minL=50
+2018-01-21 21:56:39.837044 PST | itr #43 | Put 5145 transitions to replay, size=221602
+2018-01-21 21:56:39.837239 PST | itr #43 | Optimizing critic before policy...
+2018-01-21 21:56:39.837382 PST | itr #43 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:57:48.758231 PST | itr #43 | Optimizing policy...
+2018-01-21 21:57:48.758476 PST | itr #43 | Computing loss before
+2018-01-21 21:57:48.819195 PST | itr #43 | Computing KL before
+2018-01-21 21:57:48.841029 PST | itr #43 | Optimizing
+2018-01-21 21:57:49.068073 PST | itr #43 | Start CG optimization: #parameters: 43634, #inputs: 5145, #subsample_inputs: 5145
+2018-01-21 21:57:49.369796 PST | itr #43 | computing loss before
+2018-01-21 21:57:49.462066 PST | itr #43 | performing update
+2018-01-21 21:57:49.462283 PST | itr #43 | computing gradient
+2018-01-21 21:57:49.610491 PST | itr #43 | gradient computed
+2018-01-21 21:57:49.610712 PST | itr #43 | computing descent direction
+2018-01-21 21:57:51.378508 PST | itr #43 | descent direction computed
+2018-01-21 21:57:51.459692 PST | itr #43 | backtrack iters: 0
+2018-01-21 21:57:51.459920 PST | itr #43 | computing loss after
+2018-01-21 21:57:51.460051 PST | itr #43 | optimization finished
+2018-01-21 21:57:51.808148 PST | itr #43 | Computing KL after
+2018-01-21 21:57:51.850319 PST | itr #43 | Computing loss after
+2018-01-21 21:57:52.031070 PST | itr #43 | Saved
+2018-01-21 21:57:52.032467 PST | -----------------------  --------------
+2018-01-21 21:57:52.032643 PST | PolicyExecTime              6.34194
+2018-01-21 21:57:52.032774 PST | EnvExecTime                17.9189
+2018-01-21 21:57:52.032938 PST | ProcessExecTime             0.183435
+2018-01-21 21:57:52.033071 PST | AbsLearnSignalOld           0.600459
+2018-01-21 21:57:52.033209 PST | AbsLearnSignalNew           0.86252
+2018-01-21 21:57:52.033347 PST | AbsLearnSignal              0.86252
+2018-01-21 21:57:52.033486 PST | Iteration                  43
+2018-01-21 21:57:52.033626 PST | AverageDiscountedReturn   262.069
+2018-01-21 21:57:52.033766 PST | AverageReturn             383.134
+2018-01-21 21:57:52.033908 PST | ExplainedVariance           0.153457
+2018-01-21 21:57:52.034044 PST | NumTrajs                   67
+2018-01-21 21:57:52.034175 PST | Entropy                    24.125
+2018-01-21 21:57:52.034304 PST | Perplexity                  3.00151e+10
+2018-01-21 21:57:52.034433 PST | StdReturn                  97.2455
+2018-01-21 21:57:52.034561 PST | MaxReturn                 805.328
+2018-01-21 21:57:52.034689 PST | MinReturn                 221.336
+2018-01-21 21:57:52.034817 PST | AveragePolicyStd            1.00018
+2018-01-21 21:57:52.034952 PST | LossBefore               -174.575
+2018-01-21 21:57:52.035080 PST | LossAfter                -174.701
+2018-01-21 21:57:52.049612 PST | MeanKLBefore                0
+2018-01-21 21:57:52.049749 PST | MeanKL                      0.00997809
+2018-01-21 21:57:52.049887 PST | dLoss                       0.126358
+2018-01-21 21:57:52.050028 PST | AverageQLoss              109.327
+2018-01-21 21:57:52.050172 PST | AverageQ                  177.238
+2018-01-21 21:57:52.050329 PST | AverageAbsQ               177.292
+2018-01-21 21:57:52.050479 PST | AverageY                  177.257
+2018-01-21 21:57:52.050619 PST | AverageAbsY               177.276
+2018-01-21 21:57:52.053409 PST | AverageAbsQYDiff            7.2293
+2018-01-21 21:57:52.053561 PST | Time                     4391.47
+2018-01-21 21:57:52.053704 PST | ItrTime                    98.1314
+2018-01-21 21:57:52.053845 PST | -----------------------  --------------
+2018-01-21 21:57:52.361513 PST | itr #44 | Mem: 3445.644531
+2018-01-21 21:57:52.361754 PST | itr #44 | Obtaining samples...
+2018-01-21 21:57:52.361911 PST | itr #44 | Obtaining samples for iteration 44...
+2018-01-21 21:58:15.888931 PST | itr #44 | Processing samples...
+2018-01-21 21:58:16.385199 PST | itr #44 | Qprop, subtracting control variate
+2018-01-21 21:58:16.454272 PST | itr #44 | M-Qprop, subtracting values
+2018-01-21 21:58:16.456003 PST | itr #44 | fitting baseline...
+2018-01-21 21:58:19.363895 PST | itr #44 | fitted
+2018-01-21 21:58:19.372366 PST | itr #44 | Logging diagnostics...
+2018-01-21 21:58:19.373972 PST | itr #44 | Adding samples to replay pool...
+2018-01-21 21:58:19.490938 PST | itr #44 | PathsInfo epsN=66, meanL=76.44, maxL=142, minL=46
+2018-01-21 21:58:19.519725 PST | itr #44 | Put 5045 transitions to replay, size=226647
+2018-01-21 21:58:19.519922 PST | itr #44 | Optimizing critic before policy...
+2018-01-21 21:58:19.520079 PST | itr #44 | Fitting critic for 5000 iterations, batch size=64
+2018-01-21 21:59:32.055335 PST | itr #44 | Optimizing policy...
+2018-01-21 21:59:32.055507 PST | itr #44 | Computing loss before
+2018-01-21 21:59:32.106091 PST | itr #44 | Computing KL before
+2018-01-21 21:59:32.133224 PST | itr #44 | Optimizing
+2018-01-21 21:59:32.209266 PST | itr #44 | Start CG optimization: #parameters: 43634, #inputs: 5045, #subsample_inputs: 5045
+2018-01-21 21:59:32.284552 PST | itr #44 | computing loss before
+2018-01-21 21:59:32.340646 PST | itr #44 | performing update
+2018-01-21 21:59:32.340867 PST | itr #44 | computing gradient
+2018-01-21 21:59:32.466134 PST | itr #44 | gradient computed
+2018-01-21 21:59:32.466363 PST | itr #44 | computing descent direction
+2018-01-21 21:59:33.816957 PST | itr #44 | descent direction computed
+2018-01-21 21:59:33.869997 PST | itr #44 | backtrack iters: 0
+2018-01-21 21:59:33.870225 PST | itr #44 | computing loss after
+2018-01-21 21:59:33.870378 PST | itr #44 | optimization finished
+2018-01-21 21:59:34.019749 PST | itr #44 | Computing KL after
+2018-01-21 21:59:34.048419 PST | itr #44 | Computing loss after
+2018-01-21 21:59:34.163815 PST | itr #44 | Saved
+2018-01-21 21:59:34.165175 PST | -----------------------  --------------
+2018-01-21 21:59:34.165350 PST | PolicyExecTime              5.63558
+2018-01-21 21:59:34.165493 PST | EnvExecTime                17.6186
+2018-01-21 21:59:34.165632 PST | ProcessExecTime             0.187316
+2018-01-21 21:59:34.165773 PST | AbsLearnSignalOld           0.573285
+2018-01-21 21:59:34.165908 PST | AbsLearnSignalNew           0.853776
+2018-01-21 21:59:34.166037 PST | AbsLearnSignal              0.853776
+2018-01-21 21:59:34.166201 PST | Iteration                  44
+2018-01-21 21:59:34.166333 PST | AverageDiscountedReturn   259.667
+2018-01-21 21:59:34.166462 PST | AverageReturn             376.941
+2018-01-21 21:59:34.166601 PST | ExplainedVariance           0.313153
+2018-01-21 21:59:34.166729 PST | NumTrajs                   66
+2018-01-21 21:59:34.166857 PST | Entropy                    24.1272
+2018-01-21 21:59:34.166984 PST | Perplexity                  3.00825e+10
+2018-01-21 21:59:34.167111 PST | StdReturn                  88.7316
+2018-01-21 21:59:34.167250 PST | MaxReturn                 665.419
+2018-01-21 21:59:34.167377 PST | MinReturn                 237.708
+2018-01-21 21:59:34.167504 PST | AveragePolicyStd            1.00031
+2018-01-21 21:59:34.167631 PST | LossBefore               -177.294
+2018-01-21 21:59:34.167757 PST | LossAfter                -177.425
+2018-01-21 21:59:34.167883 PST | MeanKLBefore                0
+2018-01-21 21:59:34.168020 PST | MeanKL                      0.0099564
+2018-01-21 21:59:34.168157 PST | dLoss                       0.131302
+2018-01-21 21:59:34.168282 PST | AverageQLoss              105.335
+2018-01-21 21:59:34.168399 PST | AverageQ                  176.629
+2018-01-21 21:59:34.168541 PST | AverageAbsQ               176.677
+2018-01-21 21:59:34.168683 PST | AverageY                  176.645
+2018-01-21 21:59:34.168809 PST | AverageAbsY               176.662
+2018-01-21 21:59:34.168935 PST | AverageAbsQYDiff            7.11801
+2018-01-21 21:59:34.169061 PST | Time                     4493.6
+2018-01-21 21:59:34.169191 PST | ItrTime                   101.803
+2018-01-21 21:59:34.169334 PST | -----------------------  --------------
+2018-01-21 21:59:34.331253 PST | itr #45 | Mem: 3445.644531
+2018-01-21 21:59:34.331462 PST | itr #45 | Obtaining samples...
+2018-01-21 21:59:34.331595 PST | itr #45 | Obtaining samples for iteration 45...
+2018-01-21 22:00:03.246605 PST | itr #45 | Processing samples...
+2018-01-21 22:00:03.746863 PST | itr #45 | Qprop, subtracting control variate
+2018-01-21 22:00:03.849834 PST | itr #45 | M-Qprop, subtracting values
+2018-01-21 22:00:03.851520 PST | itr #45 | fitting baseline...
+2018-01-21 22:00:07.582379 PST | itr #45 | fitted
+2018-01-21 22:00:07.585546 PST | itr #45 | Logging diagnostics...
+2018-01-21 22:00:07.594811 PST | itr #45 | Adding samples to replay pool...
+2018-01-21 22:00:07.692896 PST | itr #45 | PathsInfo epsN=64, meanL=78.27, maxL=155, minL=46
+2018-01-21 22:00:07.693141 PST | itr #45 | Put 5009 transitions to replay, size=231656
+2018-01-21 22:00:07.699319 PST | itr #45 | Optimizing critic before policy...
+2018-01-21 22:00:07.699489 PST | itr #45 | Fitting critic for 5000 iterations, batch size=64
