@@ -1,0 +1,198 @@
+{
+  "args_data": "gANjcmxsYWIubWlzYy5pbnN0cnVtZW50ClN0dWJNZXRob2RDYWxsCnEAKYFxAX1xAihYCAAAAF9fa3dhcmdzcQN9cQRYBgAAAF9fYXJnc3EFKGNybGxhYi5taXNjLmluc3RydW1lbnQKU3R1Yk9iamVjdApxBimBcQd9cQgoWAsAAABwcm94eV9jbGFzc3EJY3NhbmRib3gucm9ja3kudGYuYWxnb3MudHJwbwpUUlBPCnEKWAYAAABrd2FyZ3NxC31xDChYEAAAAHFmX3VwZGF0ZXNfcmF0aW9xDUc/8AAAAAAAAFgKAAAAZ2FlX2xhbWJkYXEORz/vCj1wo9cKWA0AAABxZl9iYXRjaF9zaXplcQ9LQFgRAAAAYWNfc2FtcGxlX2JhY2t1cHNxEEsAWA4AAABzYW1wbGVfYmFja3Vwc3ERSwBYAwAAAGVudnESaAYpgXETfXEUKGgJY3NhbmRib3gucm9ja3kudGYuZW52cy5iYXNlClRmRW52CnEVaAt9cRZYCwAAAHdyYXBwZWRfZW52cRdoBimBcRh9cRkoaAljcmxsYWIuZW52cy5ub3JtYWxpemVkX2VudgpOb3JtYWxpemVkRW52CnEaaAt9cRsoaBJoBimBcRx9cR0oaAljcmxsYWIuZW52cy5neW1fZW52Ckd5bUVudgpxHmgLfXEfKFgKAAAAcmVjb3JkX2xvZ3EgiVgIAAAAZW52X25hbWVxIVgOAAAASGFsZkNoZWV0YWgtdjFxIlgMAAAAcmVjb3JkX3ZpZGVvcSOJdVgEAAAAYXJnc3EkKXViWA0AAABub3JtYWxpemVfb2JzcSWJdWgkKXVic2gkKXViWAsAAABxZl9iYXNlbGluZXEmaAYpgXEnfXEoKGgJY3NhbmRib3gucm9ja3kudGYuYmFzZWxpbmVzLnFfYmFzZWxpbmUKUWZ1bmN0aW9uQmFzZWxpbmUKcSloC31xKihYAgAAAHFmcStoBimBcSx9cS0oaAljc2FuZGJveC5yb2NreS50Zi5xX2Z1bmN0aW9ucy5jb250aW51b3VzX21scF9xX2Z1bmN0aW9uCkNvbnRpbnVvdXNNTFBRRnVuY3Rpb24KcS5oC31xLyhYDAAAAGhpZGRlbl9zaXplc3EwXXExKEtkS2RlWBMAAABoaWRkZW5fbm9ubGluZWFyaXR5cTJjdGVuc29yZmxvdy5weXRob24ub3BzLmdlbl9ubl9vcHMKcmVsdQpxM1gIAAAAZW52X3NwZWNxNGNybGxhYi5taXNjLmluc3RydW1lbnQKU3R1YkF0dHIKcTUpgXE2fXE3KFgKAAAAX2F0dHJfbmFtZXE4WAQAAABzcGVjcTlYBAAAAF9vYmpxOmgTdWJ1aCQpdWJYBgAAAHBvbGljeXE7aAYpgXE8fXE9KGgJY3NhbmRib3gucm9ja3kudGYucG9saWNpZXMuZ2F1c3NpYW5fbWxwX3BvbGljeQpHYXVzc2lhbk1MUFBvbGljeQpxPmgLfXE/KGgwXXFAKEtkSzJlWAQAAABuYW1lcUFYDAAAAGdhdXNzX3BvbGljeXFCaDJjdGVuc29yZmxvdy5weXRob24ub3BzLm1hdGhfb3BzCnRhbmgKcUNoNGg1KYFxRH1xRShoOGg5aDpoE3ViWBMAAABvdXRwdXRfbm9ubGluZWFyaXR5cUZOdWgkKXViaDRoNSmBcUd9cUgoaDhoOWg6aBN1YnVoJCl1YlgQAAAAcmVwbGFjZW1lbnRfcHJvYnFJRz/wAAAAAAAAWAsAAABxZl9tY19yYXRpb3FKSwBYCAAAAGJhc2VsaW5lcUtoBimBcUx9cU0oaAljcmxsYWIuYmFzZWxpbmVzLmxpbmVhcl9mZWF0dXJlX2Jhc2VsaW5lCkxpbmVhckZlYXR1cmVCYXNlbGluZQpxTmgLfXFPaDRoNSmBcVB9cVEoaDhoOWg6aBN1YnNoJCl1YlgQAAAAcXByb3BfZXRhX29wdGlvbnFSWAQAAABvbmVzcVNYDwAAAHFmX3Jlc2lkdWFsX3BoaXFUSwBYEQAAAGtsX3NhbXBsZV9iYWNrdXBzcVVLAFgMAAAAc2NhbGVfcmV3YXJkcVZHP/AAAAAAAABYCAAAAGRpc2NvdW50cVdHP++uFHrhR65oO2g8WBAAAAByZXBsYXlfcG9vbF9zaXplcVhKQEIPAFgJAAAAc3RlcF9zaXplcVlHP4R64UeuFHtYCQAAAHNhdmVfZnJlcXFaSwBYDQAAAG1pbl9wb29sX3NpemVxW03oA1gQAAAAcWZfbGVhcm5pbmdfcmF0ZXFcRz9QYk3S8an8WAwAAAByZXN0b3JlX2F1dG9xXYhYBQAAAG5faXRycV5NIE5YEgAAAHBvbGljeV9zYW1wbGVfbGFzdHFfiFgNAAAAcWZfdXNlX3RhcmdldHFgiGgraCxYDwAAAG1heF9wYXRoX2xlbmd0aHFhTegDWAoAAABiYXRjaF9zaXplcWJNiBN1aCQpdWJYBQAAAHRyYWlucWMpfXFkdHFldWIu",
+  "exp_name": "HalfCheetah-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0",
+  "json_args": {
+    "algo": {
+      "_name": "sandbox.rocky.tf.algos.trpo.TRPO",
+      "ac_sample_backups": 0,
+      "batch_size": 5000,
+      "discount": 0.99,
+      "gae_lambda": 0.97,
+      "kl_sample_backups": 0,
+      "max_path_length": 1000,
+      "min_pool_size": 1000,
+      "n_itr": 20000,
+      "policy_sample_last": true,
+      "qf": {
+        "_name": "sandbox.rocky.tf.q_functions.continuous_mlp_q_function.ContinuousMLPQFunction",
+        "env_spec": {
+          "attr": "spec",
+          "obj": {
+            "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+            "wrapped_env": {
+              "_name": "rllab.envs.normalized_env.NormalizedEnv",
+              "env": {
+                "_name": "rllab.envs.gym_env.GymEnv",
+                "env_name": "HalfCheetah-v1",
+                "record_log": false,
+                "record_video": false
+              },
+              "normalize_obs": false
+            }
+          }
+        },
+        "hidden_nonlinearity": "tensorflow.python.ops.gen_nn_ops.relu",
+        "hidden_sizes": [
+          100,
+          100
+        ]
+      },
+      "qf_baseline": {
+        "_name": "sandbox.rocky.tf.baselines.q_baseline.QfunctionBaseline",
+        "env_spec": {
+          "attr": "spec",
+          "obj": {
+            "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+            "wrapped_env": {
+              "_name": "rllab.envs.normalized_env.NormalizedEnv",
+              "env": {
+                "_name": "rllab.envs.gym_env.GymEnv",
+                "env_name": "HalfCheetah-v1",
+                "record_log": false,
+                "record_video": false
+              },
+              "normalize_obs": false
+            }
+          }
+        },
+        "policy": {
+          "_name": "sandbox.rocky.tf.policies.gaussian_mlp_policy.GaussianMLPPolicy",
+          "env_spec": {
+            "attr": "spec",
+            "obj": {
+              "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+              "wrapped_env": {
+                "_name": "rllab.envs.normalized_env.NormalizedEnv",
+                "env": {
+                  "_name": "rllab.envs.gym_env.GymEnv",
+                  "env_name": "HalfCheetah-v1",
+                  "record_log": false,
+                  "record_video": false
+                },
+                "normalize_obs": false
+              }
+            }
+          },
+          "hidden_nonlinearity": "tensorflow.python.ops.math_ops.tanh",
+          "hidden_sizes": [
+            100,
+            50
+          ],
+          "name": "gauss_policy",
+          "output_nonlinearity": null
+        },
+        "qf": {
+          "_name": "sandbox.rocky.tf.q_functions.continuous_mlp_q_function.ContinuousMLPQFunction",
+          "env_spec": {
+            "attr": "spec",
+            "obj": {
+              "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+              "wrapped_env": {
+                "_name": "rllab.envs.normalized_env.NormalizedEnv",
+                "env": {
+                  "_name": "rllab.envs.gym_env.GymEnv",
+                  "env_name": "HalfCheetah-v1",
+                  "record_log": false,
+                  "record_video": false
+                },
+                "normalize_obs": false
+              }
+            }
+          },
+          "hidden_nonlinearity": "tensorflow.python.ops.gen_nn_ops.relu",
+          "hidden_sizes": [
+            100,
+            100
+          ]
+        }
+      },
+      "qf_batch_size": 64,
+      "qf_learning_rate": 0.001,
+      "qf_mc_ratio": 0,
+      "qf_residual_phi": 0,
+      "qf_updates_ratio": 1.0,
+      "qf_use_target": true,
+      "qprop_eta_option": "ones",
+      "replacement_prob": 1.0,
+      "replay_pool_size": 1000000,
+      "restore_auto": true,
+      "sample_backups": 0,
+      "save_freq": 0,
+      "scale_reward": 1.0,
+      "step_size": 0.01
+    },
+    "baseline": {
+      "_name": "rllab.baselines.linear_feature_baseline.LinearFeatureBaseline",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "HalfCheetah-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      }
+    },
+    "env": {
+      "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+      "wrapped_env": {
+        "_name": "rllab.envs.normalized_env.NormalizedEnv",
+        "env": {
+          "_name": "rllab.envs.gym_env.GymEnv",
+          "env_name": "HalfCheetah-v1",
+          "record_log": false,
+          "record_video": false
+        },
+        "normalize_obs": false
+      }
+    },
+    "exp_name": "HalfCheetah-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0",
+    "policy": {
+      "_name": "sandbox.rocky.tf.policies.gaussian_mlp_policy.GaussianMLPPolicy",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "HalfCheetah-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      },
+      "hidden_nonlinearity": "tensorflow.python.ops.math_ops.tanh",
+      "hidden_sizes": [
+        100,
+        50
+      ],
+      "name": "gauss_policy",
+      "output_nonlinearity": null
+    }
+  },
+  "log_dir": "/home/sbhupatiraju/shane/rllabplusplus/data/local/qprop-halfcheetah-2011/HalfCheetah-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0--s-2011",
+  "log_tabular_only": false,
+  "n_parallel": 1,
+  "params_log_file": "params.json",
+  "plot": false,
+  "resume_from": null,
+  "seed": 2011,
+  "snapshot_gap": 1,
+  "snapshot_mode": "last_best",
+  "tabular_log_file": "progress.csv",
+  "text_log_file": "debug.log",
+  "use_cloudpickle": false,
+  "variant_data": null,
+  "variant_log_file": "variant.json"
+}
