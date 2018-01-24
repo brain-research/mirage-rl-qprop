@@ -1,0 +1,198 @@
+{
+  "args_data": "gANjcmxsYWIubWlzYy5pbnN0cnVtZW50ClN0dWJNZXRob2RDYWxsCnEAKYFxAX1xAihYBgAAAF9fYXJnc3EDKGNybGxhYi5taXNjLmluc3RydW1lbnQKU3R1Yk9iamVjdApxBCmBcQV9cQYoWAsAAABwcm94eV9jbGFzc3EHY3NhbmRib3gucm9ja3kudGYuYWxnb3MudHJwbwpUUlBPCnEIWAYAAABrd2FyZ3NxCX1xCihYEAAAAHJlcGxhY2VtZW50X3Byb2JxC0c/8AAAAAAAAFgIAAAAYmFzZWxpbmVxDGgEKYFxDX1xDihoB2NybGxhYi5iYXNlbGluZXMubGluZWFyX2ZlYXR1cmVfYmFzZWxpbmUKTGluZWFyRmVhdHVyZUJhc2VsaW5lCnEPaAl9cRBYCAAAAGVudl9zcGVjcRFjcmxsYWIubWlzYy5pbnN0cnVtZW50ClN0dWJBdHRyCnESKYFxE31xFChYCgAAAF9hdHRyX25hbWVxFVgEAAAAc3BlY3EWWAQAAABfb2JqcRdoBCmBcRh9cRkoaAdjc2FuZGJveC5yb2NreS50Zi5lbnZzLmJhc2UKVGZFbnYKcRpoCX1xG1gLAAAAd3JhcHBlZF9lbnZxHGgEKYFxHX1xHihoB2NybGxhYi5lbnZzLm5vcm1hbGl6ZWRfZW52Ck5vcm1hbGl6ZWRFbnYKcR9oCX1xIChYAwAAAGVudnEhaAQpgXEifXEjKGgHY3JsbGFiLmVudnMuZ3ltX2VudgpHeW1FbnYKcSRoCX1xJShYCgAAAHJlY29yZF9sb2dxJolYCAAAAGVudl9uYW1lcSdYCwAAAEh1bWFub2lkLXYxcShYDAAAAHJlY29yZF92aWRlb3EpiXVYBAAAAGFyZ3NxKil1YlgNAAAAbm9ybWFsaXplX29ic3EriXVoKil1YnNoKil1YnVic2gqKXViWBIAAABwb2xpY3lfc2FtcGxlX2xhc3RxLIhYEAAAAHFmX3VwZGF0ZXNfcmF0aW9xLUc/8AAAAAAAAFgGAAAAcG9saWN5cS5oBCmBcS99cTAoaAdjc2FuZGJveC5yb2NreS50Zi5wb2xpY2llcy5nYXVzc2lhbl9tbHBfcG9saWN5CkdhdXNzaWFuTUxQUG9saWN5CnExaAl9cTIoWBMAAABoaWRkZW5fbm9ubGluZWFyaXR5cTNjdGVuc29yZmxvdy5weXRob24ub3BzLm1hdGhfb3BzCnRhbmgKcTRYEwAAAG91dHB1dF9ub25saW5lYXJpdHlxNU5YBAAAAG5hbWVxNlgMAAAAZ2F1c3NfcG9saWN5cTdYDAAAAGhpZGRlbl9zaXplc3E4XXE5KEtkSzJlaBFoEimBcTp9cTsoaBVoFmgXaBh1YnVoKil1YlgQAAAAcWZfbGVhcm5pbmdfcmF0ZXE8Rz9QYk3S8an8WA4AAABzYW1wbGVfYmFja3Vwc3E9SwBYCQAAAHNhdmVfZnJlcXE+SwBYAgAAAHFmcT9oBCmBcUB9cUEoaAdjc2FuZGJveC5yb2NreS50Zi5xX2Z1bmN0aW9ucy5jb250aW51b3VzX21scF9xX2Z1bmN0aW9uCkNvbnRpbnVvdXNNTFBRRnVuY3Rpb24KcUJoCX1xQyhoM2N0ZW5zb3JmbG93LnB5dGhvbi5vcHMuZ2VuX25uX29wcwpyZWx1CnFEaBFoEimBcUV9cUYoaBVoFmgXaBh1Ymg4XXFHKEtkS2RldWgqKXViWAwAAABzY2FsZV9yZXdhcmRxSEc/8AAAAAAAAFgQAAAAcXByb3BfZXRhX29wdGlvbnFJWAQAAABvbmVzcUpYDwAAAG1heF9wYXRoX2xlbmd0aHFLTegDWAsAAABxZl9tY19yYXRpb3FMSwBoIWgYWAoAAABnYWVfbGFtYmRhcU1HP+8KPXCj1wpYDQAAAHFmX2JhdGNoX3NpemVxTktAWA8AAABxZl9yZXNpZHVhbF9waGlxT0sAWAsAAABxZl9iYXNlbGluZXFQaAQpgXFRfXFSKGgHY3NhbmRib3gucm9ja3kudGYuYmFzZWxpbmVzLnFfYmFzZWxpbmUKUWZ1bmN0aW9uQmFzZWxpbmUKcVNoCX1xVChoLmgvaBFoEimBcVV9cVYoaBVoFmgXaBh1Ymg/aEB1aCopdWJYDAAAAHJlc3RvcmVfYXV0b3FXiFgNAAAAbWluX3Bvb2xfc2l6ZXFYTegDWAoAAABiYXRjaF9zaXplcVlNiBNYEQAAAGFjX3NhbXBsZV9iYWNrdXBzcVpLAFgIAAAAZGlzY291bnRxW0c/764UeuFHrlgFAAAAbl9pdHJxXE0gTlgQAAAAcmVwbGF5X3Bvb2xfc2l6ZXFdSkBCDwBYDQAAAHFmX3VzZV90YXJnZXRxXohYEQAAAGtsX3NhbXBsZV9iYWNrdXBzcV9LAFgJAAAAc3RlcF9zaXplcWBHP4R64UeuFHt1aCopdWJYBQAAAHRyYWlucWEpfXFidHFjWAgAAABfX2t3YXJnc3FkfXFldWIu",
+  "exp_name": "Humanoid-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0",
+  "json_args": {
+    "algo": {
+      "_name": "sandbox.rocky.tf.algos.trpo.TRPO",
+      "ac_sample_backups": 0,
+      "batch_size": 5000,
+      "discount": 0.99,
+      "gae_lambda": 0.97,
+      "kl_sample_backups": 0,
+      "max_path_length": 1000,
+      "min_pool_size": 1000,
+      "n_itr": 20000,
+      "policy_sample_last": true,
+      "qf": {
+        "_name": "sandbox.rocky.tf.q_functions.continuous_mlp_q_function.ContinuousMLPQFunction",
+        "env_spec": {
+          "attr": "spec",
+          "obj": {
+            "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+            "wrapped_env": {
+              "_name": "rllab.envs.normalized_env.NormalizedEnv",
+              "env": {
+                "_name": "rllab.envs.gym_env.GymEnv",
+                "env_name": "Humanoid-v1",
+                "record_log": false,
+                "record_video": false
+              },
+              "normalize_obs": false
+            }
+          }
+        },
+        "hidden_nonlinearity": "tensorflow.python.ops.gen_nn_ops.relu",
+        "hidden_sizes": [
+          100,
+          100
+        ]
+      },
+      "qf_baseline": {
+        "_name": "sandbox.rocky.tf.baselines.q_baseline.QfunctionBaseline",
+        "env_spec": {
+          "attr": "spec",
+          "obj": {
+            "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+            "wrapped_env": {
+              "_name": "rllab.envs.normalized_env.NormalizedEnv",
+              "env": {
+                "_name": "rllab.envs.gym_env.GymEnv",
+                "env_name": "Humanoid-v1",
+                "record_log": false,
+                "record_video": false
+              },
+              "normalize_obs": false
+            }
+          }
+        },
+        "policy": {
+          "_name": "sandbox.rocky.tf.policies.gaussian_mlp_policy.GaussianMLPPolicy",
+          "env_spec": {
+            "attr": "spec",
+            "obj": {
+              "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+              "wrapped_env": {
+                "_name": "rllab.envs.normalized_env.NormalizedEnv",
+                "env": {
+                  "_name": "rllab.envs.gym_env.GymEnv",
+                  "env_name": "Humanoid-v1",
+                  "record_log": false,
+                  "record_video": false
+                },
+                "normalize_obs": false
+              }
+            }
+          },
+          "hidden_nonlinearity": "tensorflow.python.ops.math_ops.tanh",
+          "hidden_sizes": [
+            100,
+            50
+          ],
+          "name": "gauss_policy",
+          "output_nonlinearity": null
+        },
+        "qf": {
+          "_name": "sandbox.rocky.tf.q_functions.continuous_mlp_q_function.ContinuousMLPQFunction",
+          "env_spec": {
+            "attr": "spec",
+            "obj": {
+              "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+              "wrapped_env": {
+                "_name": "rllab.envs.normalized_env.NormalizedEnv",
+                "env": {
+                  "_name": "rllab.envs.gym_env.GymEnv",
+                  "env_name": "Humanoid-v1",
+                  "record_log": false,
+                  "record_video": false
+                },
+                "normalize_obs": false
+              }
+            }
+          },
+          "hidden_nonlinearity": "tensorflow.python.ops.gen_nn_ops.relu",
+          "hidden_sizes": [
+            100,
+            100
+          ]
+        }
+      },
+      "qf_batch_size": 64,
+      "qf_learning_rate": 0.001,
+      "qf_mc_ratio": 0,
+      "qf_residual_phi": 0,
+      "qf_updates_ratio": 1.0,
+      "qf_use_target": true,
+      "qprop_eta_option": "ones",
+      "replacement_prob": 1.0,
+      "replay_pool_size": 1000000,
+      "restore_auto": true,
+      "sample_backups": 0,
+      "save_freq": 0,
+      "scale_reward": 1.0,
+      "step_size": 0.01
+    },
+    "baseline": {
+      "_name": "rllab.baselines.linear_feature_baseline.LinearFeatureBaseline",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "Humanoid-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      }
+    },
+    "env": {
+      "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+      "wrapped_env": {
+        "_name": "rllab.envs.normalized_env.NormalizedEnv",
+        "env": {
+          "_name": "rllab.envs.gym_env.GymEnv",
+          "env_name": "Humanoid-v1",
+          "record_log": false,
+          "record_video": false
+        },
+        "normalize_obs": false
+      }
+    },
+    "exp_name": "Humanoid-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0",
+    "policy": {
+      "_name": "sandbox.rocky.tf.policies.gaussian_mlp_policy.GaussianMLPPolicy",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "Humanoid-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      },
+      "hidden_nonlinearity": "tensorflow.python.ops.math_ops.tanh",
+      "hidden_sizes": [
+        100,
+        50
+      ],
+      "name": "gauss_policy",
+      "output_nonlinearity": null
+    }
+  },
+  "log_dir": "/home/sbhupatiraju/shane/rllabplusplus/data/local/qprop+-humanoid-4011/Humanoid-v1-5000--an-qprop--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--psl-True--qbs-64--qeo-ones--qhn-relu--qhs-100x100--qlr-0-001--qmr-0--qrp-0--qut-True--sb-0--sr-1-0--ss-0-01--ur-1-0--s-4011",
+  "log_tabular_only": false,
+  "n_parallel": 1,
+  "params_log_file": "params.json",
+  "plot": false,
+  "resume_from": null,
+  "seed": 4011,
+  "snapshot_gap": 1,
+  "snapshot_mode": "last_best",
+  "tabular_log_file": "progress.csv",
+  "text_log_file": "debug.log",
+  "use_cloudpickle": false,
+  "variant_data": null,
+  "variant_log_file": "variant.json"
+}
