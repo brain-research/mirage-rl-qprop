@@ -1,0 +1,107 @@
+{
+  "args_data": "gANjcmxsYWIubWlzYy5pbnN0cnVtZW50ClN0dWJNZXRob2RDYWxsCnEAKYFxAX1xAihYCAAAAF9fa3dhcmdzcQN9cQRYBgAAAF9fYXJnc3EFKGNybGxhYi5taXNjLmluc3RydW1lbnQKU3R1Yk9iamVjdApxBimBcQd9cQgoWAQAAABhcmdzcQkpWAYAAABrd2FyZ3NxCn1xCyhYDAAAAHNjYWxlX3Jld2FyZHEMRz/wAAAAAAAAWA0AAABxZl91c2VfdGFyZ2V0cQ2IWAkAAABzYXZlX2ZyZXFxDksAWBEAAABhY19zYW1wbGVfYmFja3Vwc3EPSwBYDwAAAG1heF9wYXRoX2xlbmd0aHEQTegDWAUAAABuX2l0cnERTSBOWAgAAABiYXNlbGluZXESaAYpgXETfXEUKGgJKWgKfXEVWAgAAABlbnZfc3BlY3EWY3JsbGFiLm1pc2MuaW5zdHJ1bWVudApTdHViQXR0cgpxFymBcRh9cRkoWAQAAABfb2JqcRpoBimBcRt9cRwoaAkpaAp9cR1YCwAAAHdyYXBwZWRfZW52cR5oBimBcR99cSAoaAkpaAp9cSEoWAMAAABlbnZxImgGKYFxI31xJChoCSloCn1xJShYCAAAAGVudl9uYW1lcSZYCwAAAEh1bWFub2lkLXYxcSdYDAAAAHJlY29yZF92aWRlb3EoiVgKAAAAcmVjb3JkX2xvZ3EpiXVYCwAAAHByb3h5X2NsYXNzcSpjcmxsYWIuZW52cy5neW1fZW52Ckd5bUVudgpxK3ViWA0AAABub3JtYWxpemVfb2JzcSyJdWgqY3JsbGFiLmVudnMubm9ybWFsaXplZF9lbnYKTm9ybWFsaXplZEVudgpxLXVic2gqY3NhbmRib3gucm9ja3kudGYuZW52cy5iYXNlClRmRW52CnEudWJYCgAAAF9hdHRyX25hbWVxL1gEAAAAc3BlY3EwdWJzaCpjcmxsYWIuYmFzZWxpbmVzLmxpbmVhcl9mZWF0dXJlX2Jhc2VsaW5lCkxpbmVhckZlYXR1cmVCYXNlbGluZQpxMXViWBAAAABxcHJvcF9ldGFfb3B0aW9ucTJYBAAAAG9uZXNxM1gGAAAAcG9saWN5cTRoBimBcTV9cTYoaAkpaAp9cTcoWAQAAABuYW1lcThYDAAAAGdhdXNzX3BvbGljeXE5WBMAAABvdXRwdXRfbm9ubGluZWFyaXR5cTpOWBMAAABoaWRkZW5fbm9ubGluZWFyaXR5cTtjdGVuc29yZmxvdy5weXRob24ub3BzLm1hdGhfb3BzCnRhbmgKcTxoFmgXKYFxPX1xPihoGmgbaC9oMHViWAwAAABoaWRkZW5fc2l6ZXNxP11xQChLZEsyZXVoKmNzYW5kYm94LnJvY2t5LnRmLnBvbGljaWVzLmdhdXNzaWFuX21scF9wb2xpY3kKR2F1c3NpYW5NTFBQb2xpY3kKcUF1YlgIAAAAZGlzY291bnRxQkc/764UeuFHrmgiaBtYCQAAAHN0ZXBfc2l6ZXFDRz+EeuFHrhR7WAsAAABxZl9iYXNlbGluZXFETlgKAAAAYmF0Y2hfc2l6ZXFFTYgTWA0AAABxZl9iYXRjaF9zaXplcUZLQFgRAAAAa2xfc2FtcGxlX2JhY2t1cHNxR0sAWA8AAABxZl9yZXNpZHVhbF9waGlxSEsAWBAAAAByZXBsYXlfcG9vbF9zaXplcUlKQEIPAFgMAAAAcmVzdG9yZV9hdXRvcUqIWAoAAABnYWVfbGFtYmRhcUtHP+8KPXCj1wpYEAAAAHFmX3VwZGF0ZXNfcmF0aW9xTEc/8AAAAAAAAFgQAAAAcWZfbGVhcm5pbmdfcmF0ZXFNRz9QYk3S8an8WA0AAABtaW5fcG9vbF9zaXplcU5N6ANYEgAAAHBvbGljeV9zYW1wbGVfbGFzdHFPiFgQAAAAcmVwbGFjZW1lbnRfcHJvYnFQRz/wAAAAAAAAWAsAAABxZl9tY19yYXRpb3FRSwBYAgAAAHFmcVJOWA4AAABzYW1wbGVfYmFja3Vwc3FTSwB1aCpjc2FuZGJveC5yb2NreS50Zi5hbGdvcy50cnBvClRSUE8KcVR1YlgFAAAAdHJhaW5xVSl9cVZ0cVd1Yi4=",
+  "exp_name": "Humanoid-v1-5000--an-trpo--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--ss-0-01",
+  "json_args": {
+    "algo": {
+      "_name": "sandbox.rocky.tf.algos.trpo.TRPO",
+      "ac_sample_backups": 0,
+      "batch_size": 5000,
+      "discount": 0.99,
+      "gae_lambda": 0.97,
+      "kl_sample_backups": 0,
+      "max_path_length": 1000,
+      "min_pool_size": 1000,
+      "n_itr": 20000,
+      "policy_sample_last": true,
+      "qf": null,
+      "qf_baseline": null,
+      "qf_batch_size": 64,
+      "qf_learning_rate": 0.001,
+      "qf_mc_ratio": 0,
+      "qf_residual_phi": 0,
+      "qf_updates_ratio": 1.0,
+      "qf_use_target": true,
+      "qprop_eta_option": "ones",
+      "replacement_prob": 1.0,
+      "replay_pool_size": 1000000,
+      "restore_auto": true,
+      "sample_backups": 0,
+      "save_freq": 0,
+      "scale_reward": 1.0,
+      "step_size": 0.01
+    },
+    "baseline": {
+      "_name": "rllab.baselines.linear_feature_baseline.LinearFeatureBaseline",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "Humanoid-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      }
+    },
+    "env": {
+      "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+      "wrapped_env": {
+        "_name": "rllab.envs.normalized_env.NormalizedEnv",
+        "env": {
+          "_name": "rllab.envs.gym_env.GymEnv",
+          "env_name": "Humanoid-v1",
+          "record_log": false,
+          "record_video": false
+        },
+        "normalize_obs": false
+      }
+    },
+    "exp_name": "Humanoid-v1-5000--an-trpo--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--ss-0-01",
+    "policy": {
+      "_name": "sandbox.rocky.tf.policies.gaussian_mlp_policy.GaussianMLPPolicy",
+      "env_spec": {
+        "attr": "spec",
+        "obj": {
+          "_name": "sandbox.rocky.tf.envs.base.TfEnv",
+          "wrapped_env": {
+            "_name": "rllab.envs.normalized_env.NormalizedEnv",
+            "env": {
+              "_name": "rllab.envs.gym_env.GymEnv",
+              "env_name": "Humanoid-v1",
+              "record_log": false,
+              "record_video": false
+            },
+            "normalize_obs": false
+          }
+        }
+      },
+      "hidden_nonlinearity": "tensorflow.python.ops.math_ops.tanh",
+      "hidden_sizes": [
+        100,
+        50
+      ],
+      "name": "gauss_policy",
+      "output_nonlinearity": null
+    }
+  },
+  "log_dir": "/home/sbhupatiraju/shane/rllabplusplus/data/local/trpo-humanoid-3101/Humanoid-v1-5000--an-trpo--bc-linear--bhs-32x32--gl-0-97--ksb-0--phn-tanh--phs-100x50--pon-None--ss-0-01--s-3101",
+  "log_tabular_only": false,
+  "n_parallel": 1,
+  "params_log_file": "params.json",
+  "plot": false,
+  "resume_from": null,
+  "seed": 3101,
+  "snapshot_gap": 1,
+  "snapshot_mode": "last_best",
+  "tabular_log_file": "progress.csv",
+  "text_log_file": "debug.log",
+  "use_cloudpickle": false,
+  "variant_data": null,
+  "variant_log_file": "variant.json"
+}
