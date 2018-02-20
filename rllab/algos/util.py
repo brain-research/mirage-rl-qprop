@@ -5,7 +5,7 @@ from rllab.misc.ext import extract
 
 
 def center_advantages(advantages):
-    return (advantages - np.mean(advantages)) / (advantages.std() + 1e-8)
+    return (advantages - np.mean(advantages)) / (advantages.std() + 1e-8), advantages.std() + 1e-8
 
 
 def shift_advantages_to_positive(advantages):

@@ -5,7 +5,6 @@ from sandbox.rocky.tf.optimizers.penalty_lbfgs_optimizer import PenaltyLbfgsOpti
 from sandbox.rocky.tf.algos.batch_polopt import BatchPolopt
 from sandbox.rocky.tf.misc import tensor_utils
 import tensorflow as tf
-import numpy as np
 import gc
 
 class NPO(BatchPolopt):
@@ -16,7 +15,6 @@ class NPO(BatchPolopt):
     def __init__(
             self,
             optimizer=None,
-            extra_baseline=None,
             optimizer_args=None,
             step_size=0.01,
             sample_backups=0,
@@ -27,7 +25,6 @@ class NPO(BatchPolopt):
                 optimizer_args = dict()
             optimizer = PenaltyLbfgsOptimizer(**optimizer_args)
         self.optimizer = optimizer
-        self.extra_baseline = extra_baseline
         self.step_size = step_size
         self.sample_backups = sample_backups
         self.kl_sample_backups = kl_sample_backups
@@ -129,14 +126,11 @@ class NPO(BatchPolopt):
                 input_list += [off_obs_var]
                 surr_loss -= tf.reduce_mean(off_e_qval)# * eta_var)
             else:
-                e_qval = self.qf.get_e_qval_sym(obs_var, self.policy, deterministic=True)
-                bias_c = e_qval * eta_var
-                surr_loss -= tf.reduce_mean(bias_c)
-                """
-                bias_c_mu, bias_c_sigma = tf.nn.moments(bias_c, axes=0)
-                bias_c = (bias_c - bias_c_mu) / (tf.sqrt(bias_c_sigma) + 1e-8)
-                surr_loss -= tf.reduce_mean(bias_c)
-                """
+                if not self.mqprop:
+                    # Originally, we subtract this value for the bias correction, but we don't do that if we want mqprop (no action-conditional baseline).
+                    e_qval = self.qf.get_e_qval_sym(obs_var, self.policy, deterministic=True)
+                    surr_loss -= tf.reduce_mean(e_qval * eta_var)
+
             mean_kl = tf.reduce_mean(kl)
             input_list += [eta_var]
             control_variate = self.qf.get_cv_sym(obs_var,

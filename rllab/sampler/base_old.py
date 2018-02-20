@@ -46,15 +46,14 @@ class BaseSampler(Sampler):
 
     def process_advantages(self, advantages):
         if self.algo.center_adv:
-            advantages, adv_std = util.center_advantages(advantages)
-            return advantages, adv_std
+            advantages = util.center_advantages(advantages)
 
         if self.algo.positive_adv:
             advantages = util.shift_advantages_to_positive(advantages)
-            return advantages
+
+        return advantages
 
     def process_samples(self, itr, paths):
-        advantage_baselines = []
         baselines = []
         returns = []
 
@@ -63,11 +62,8 @@ class BaseSampler(Sampler):
         else:
             all_path_baselines = [self.algo.baseline.predict(path) for path in paths]
 
-        all_path_advantages = [self.algo.extra_baseline.predict(path) for path in paths]
-
         for idx, path in enumerate(paths):
             path_baselines = np.append(all_path_baselines[idx], 0)
-            path_advantages = np.append(all_path_advantages[idx], 0)
             deltas = path["rewards"] + \
                      self.algo.discount * path_baselines[1:] - \
                      path_baselines[:-1]
@@ -75,7 +71,6 @@ class BaseSampler(Sampler):
                 deltas, self.algo.discount * self.algo.gae_lambda)
             path["qvalues"] = path["advantages"] + path_baselines[:-1]
             path["returns"] = special.discount_cumsum(path["rewards"], self.algo.discount)
-            advantage_baselines.append(path_advantages[:-1])
             baselines.append(path_baselines[:-1])
             returns.append(path["returns"])
 
@@ -83,9 +78,6 @@ class BaseSampler(Sampler):
             np.concatenate(baselines),
             np.concatenate(returns)
         )
-
-        old_advantages_to_fit = tensor_utils.concat_tensor_list([path["advantages"] for path in paths])
-        logger.record_tabular("AdvantagesMean", old_advantages_to_fit.mean())
 
         if not self.algo.policy.recurrent:
             observations = tensor_utils.concat_tensor_list([path["observations"] for path in paths])
@@ -95,19 +87,20 @@ class BaseSampler(Sampler):
             advantages = tensor_utils.concat_tensor_list([path["advantages"] for path in paths])
             qvalues = tensor_utils.concat_tensor_list([path["qvalues"] for path in paths])
             baselines_tensor = tensor_utils.concat_tensor_list(baselines)
-            baselines_advantage_tensor = tensor_utils.concat_tensor_list(advantage_baselines)
             env_infos = tensor_utils.concat_tensor_dict_list([path["env_infos"] for path in paths])
             agent_infos = tensor_utils.concat_tensor_dict_list([path["agent_infos"] for path in paths])
             etas = None
 
             if hasattr(self.algo, 'qprop') and self.algo.qprop:
                 old_advantages = np.copy(advantages)
-                old_advantages, _ = self.process_advantages(old_advantages)
+                old_advantages = self.process_advantages(old_advantages)
                 old_advantages_scale = np.abs(old_advantages).mean()
-                logger.record_tabular("OldAdvantagesMSE", np.square(advantages).mean())
                 logger.record_tabular("AbsLearnSignalOld", old_advantages_scale)
                 logger.log("Qprop, subtracting control variate")
                 advantages_bar = self.algo.get_control_variate(observations=observations, actions=actions)
+                if hasattr(self.algo, 'mqprop') and self.algo.mqprop:
+                    logger.log("M-Qprop, subtracting values")
+                    advantages_bar -= baselines_tensor
                 if self.algo.qprop_eta_option == 'ones':
                     etas = np.ones_like(advantages)
                 elif self.algo.qprop_eta_option == 'adapt1': # conservative
@@ -119,19 +112,13 @@ class BaseSampler(Sampler):
                     etas = etas.astype(advantages.dtype)
                     logger.log("Qprop, etas: %d 1s, %d -1s"%((etas == 1).sum(), (etas == -1).sum()))
                 else: raise NotImplementedError(self.algo.qprop_eta_option)
-                """
-                logger.record_tabular("Before Advantages MSE", np.mean(np.square(advantages)))
-                advantages -= baselines_advantage_tensor
-                logger.record_tabular("After Advantages MSE", np.mean(np.square(advantages)))
-                """
                 advantages -= etas * advantages_bar
-                logger.record_tabular("NewAdvantagesMSE", np.square(advantages).mean())
-                advantages, adv_std = self.process_advantages(advantages)
-                etas /= adv_std
+                advantages = self.process_advantages(advantages)
                 advantages_scale = np.abs(advantages).mean()
                 logger.record_tabular("AbsLearnSignalNew", advantages_scale)
+                logger.record_tabular("AbsLearnSignal", advantages_scale)
             else:
-                advantages, _ = self.process_advantages(advantages)
+                advantages = self.process_advantages(advantages)
                 advantages_scale = np.abs(advantages).mean()
                 logger.record_tabular("AbsLearnSignal", advantages_scale)
 
@@ -222,17 +209,6 @@ class BaseSampler(Sampler):
         else:
             self.algo.baseline.fit(paths)
         logger.log("fitted")
-
-        logger.log("evaluating fit baseline with another baseline...")
-        self.algo.extra_baseline.fit(old_advantages_to_fit, paths)
-        logger.log("fitted again")
-
-        """
-        logger.log("evaluating fit baseline with another baseline...")
-        self.algo.extra_baseline.fit(baselines_tensor, paths)
-        logger.log("fitted again")
-        """
-
 
         logger.record_tabular('Iteration', itr)
         logger.record_tabular('AverageDiscountedReturn',
