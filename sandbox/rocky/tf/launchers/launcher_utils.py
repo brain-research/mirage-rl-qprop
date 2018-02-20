@@ -66,7 +66,7 @@ flags.DEFINE_float('qf_mc_ratio', 0, 'Ratio of MC regression objective for fitti
 flags.DEFINE_float('qf_residual_phi', 0, 'Phi interpolating direct method and residual gradient method.')
 
 # qprop params
-flags.DEFINE_string('qprop_eta_option', 'ones', 'Eta multiplier for adaptive control variate.')
+flags.DEFINE_string('qprop_eta_option', 'adapt1', 'Eta multiplier for adaptive control variate.')
 flags.DEFINE_float('qprop_nu', 0, 'Nu in interpolated policy gradient with control variate.')
 
 # pgac params

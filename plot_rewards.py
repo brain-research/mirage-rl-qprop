@@ -117,7 +117,7 @@ def main(args):
             plt.ylabel('Average Reward', fontsize=14)
         plt.legend(loc='lower right', prop={'size': 15})
 
-    # Uncomment these lines to produce the un-mini plot.
+    # Uncomment all of these lines to produce the un-mini plot.
     # green = mpatches.Patch(color=map_algos_colors['qpropconserv'], label='QProp (biased)')
     # blue = mpatches.Patch(color=map_algos_colors['qpropconserveta'], label='QProp (unbiased)')
     # purple = mpatches.Patch(color=map_algos_colors['trpo'], label='TRPO')
