@@ -6,6 +6,16 @@ import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
 import matplotlib.patches as mpatches
 
+from matplotlib import rc
+# rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+## for Palatino and other serif fonts use:
+#rc('font',**{'family':'serif','serif':['Palatino']})
+rc('text', usetex=True)
+
+import seaborn as sns
+color_list = sns.color_palette("muted")
+sns.palplot(color_list)
+
 import argparse
 import glob
 
@@ -16,15 +26,9 @@ from scipy.signal import savgol_filter
 
 def main(args):
     # Plot average rewards
-    savgol_window = 21
     experiments_list = args.split('|')
     fig = plt.figure(figsize=(20, 6))
-    color_list = []
-    color_list.append((147, 79, 168)) # Darker purple (bottom)
-    color_list.append((22, 170, 71)) # Darker green (top)
-    color_list.append((28, 124, 188)) # Darker blue (middle)
-    color_list = np.array(color_list) / 255.0
-    eps_list = [100, 1000, 1000]
+    eps_list = [24, 1000, 1000]
 
     map_algos_colors = dict()
     eps_limit = dict()
@@ -32,11 +36,13 @@ def main(args):
     for i, key in enumerate(['trpo', 'qpropconserv', 'qpropconserveta']):
       map_algos_colors[key] = color_list[i]
 
-    env_names['cartpole'] = 'CartPole'
+    algo_names = {'trpo': 'TRPO', 'qpropconserv': 'QProp (biased)', 'qpropconserveta': 'QProp (unbiased)'}
+
+    env_names['cartpole'] = 'CartPole-v0'
     eps_limit['cartpole'] = eps_list[0]
-    env_names['halfcheetah'] = 'HalfCheetah'
+    env_names['halfcheetah'] = 'HalfCheetah-v1'
     eps_limit['halfcheetah'] = eps_list[1]
-    env_names['humanoid'] = 'Humanoid'
+    env_names['humanoid'] = 'Humanoid-v1'
     eps_limit['humanoid'] = eps_list[2]
 
     for idx, experiment_files_list in enumerate(experiments_list):
@@ -64,7 +70,8 @@ def main(args):
         algos_steps = dict()
         algos_rews = dict()
         ax = plt.subplot(131 + idx)
-        ax.set_title(env_names[env], fontsize=16)
+        ax.set_title(env_names[env], fontsize=18)
+        ax.grid(alpha=0.5)
 
         for i, fname in enumerate(fnames):
             fh = open(fname)
@@ -77,10 +84,17 @@ def main(args):
             steps = data['Iteration'][:limit] * 5000
             rews = data['AverageReturn'][:limit]
 
+            if env == 'cartpole':
+              savgol_window = 5
+              poly_order = 3
+            else:
+              savgol_window = 25
+              poly_order = 5
+
             if algo not in algos_steps:
                 algos_steps[algo] = steps
             if algo not in algos_rews:
-                algos_rews[algo] = [savgol_filter(rews, savgol_window, 5)]
+                algos_rews[algo] = [savgol_filter(rews, savgol_window, poly_order)]
             else:
                 algos_rews[algo].append(rews)
 
@@ -88,29 +102,38 @@ def main(args):
             algos_rews[algo] = np.stack(algos_rews[algo])
 
         for algo in reversed(sorted(algos_rews.keys())):
-            rews_z1 = savgol_filter(algos_rews[algo].mean(0) + algos_rews[algo].std(0), savgol_window, 5)
-            rews_z_1 = savgol_filter(algos_rews[algo].mean(0) - algos_rews[algo].std(0), savgol_window, 5)
-            rews_max = savgol_filter(algos_rews[algo].max(0), savgol_window, 5)
-            rews_min = savgol_filter(algos_rews[algo].min(0), savgol_window, 5)
-            rews_mean = savgol_filter(algos_rews[algo].mean(0), savgol_window, 5)
-            plt.plot(algos_steps[algo]/1000000, rews_mean, color=map_algos_colors[algo], alpha=1.0, label=algo, linewidth=2.10)
-            plt.fill_between(algos_steps[algo]/1000000, rews_mean, np.where(rews_z1 > rews_max, rews_max, rews_z1), color=map_algos_colors[algo], alpha=0.4)
-            plt.fill_between(algos_steps[algo]/1000000, np.where(rews_z_1 < rews_min, rews_min, rews_z_1), rews_mean, color=map_algos_colors[algo], alpha=0.4)
+            rews_z1 = savgol_filter(algos_rews[algo].mean(0) + algos_rews[algo].std(0), savgol_window, poly_order)
+            rews_z_1 = savgol_filter(algos_rews[algo].mean(0) - algos_rews[algo].std(0), savgol_window, poly_order)
+            rews_max = savgol_filter(algos_rews[algo].max(0), savgol_window, poly_order)
+            rews_min = savgol_filter(algos_rews[algo].min(0), savgol_window, poly_order)
+            rews_mean = savgol_filter(algos_rews[algo].mean(0), savgol_window, poly_order)
+            plt.plot(algos_steps[algo]/1000, rews_mean, color=map_algos_colors[algo], alpha=1.0, label=algo_names[algo])
+            plt.fill_between(algos_steps[algo]/1000, rews_mean, np.where(rews_z1 > rews_max, rews_max, rews_z1), color=map_algos_colors[algo], alpha=0.4)
+            plt.fill_between(algos_steps[algo]/1000, np.where(rews_z_1 < rews_min, rews_min, rews_z_1), rews_mean, color=map_algos_colors[algo], alpha=0.4)
+            plt.tick_params(axis='both', which='major', labelsize=12)
+            plt.tick_params(axis='both', which='minor', labelsize=12)
 
-            # plt.xlabel('Steps (in millions) (batch_size=5000)')
-            # plt.ylabel('Average Reward')
+            plt.xlabel('Steps (thousands)', fontsize=14)
+            plt.ylabel('Average Reward', fontsize=14)
+        plt.legend(loc='lower right', prop={'size': 15})
 
-    green = mpatches.Patch(color=color_list[1], label='Original QProp (biased)')
-    blue = mpatches.Patch(color=color_list[2], label='Corrected QProp (unbiased)')
-    purple = mpatches.Patch(color=color_list[0], label='TRPO (unbiased)')
-    leg = fig.legend(handles=[green, blue, purple], loc='lower center', ncol=3, prop={'size': 14})
+    # Uncomment these lines to produce the un-mini plot.
+    # green = mpatches.Patch(color=map_algos_colors['qpropconserv'], label='QProp (biased)')
+    # blue = mpatches.Patch(color=map_algos_colors['qpropconserveta'], label='QProp (unbiased)')
+    # purple = mpatches.Patch(color=map_algos_colors['trpo'], label='TRPO')
+    # leg = fig.legend(handles=[green, blue, purple], loc='lower center', ncol=3, prop={'size': 16})
+
+    # Move legend down.
+    # bb = leg.get_bbox_to_anchor().inverse_transformed(ax.transAxes)
+    # bb.y0 += -0.10
+    # leg.set_bbox_to_anchor(bb, transform = ax.transAxes)
 
 
     if not os.path.exists('plots/'):
         os.makedirs('plots/')
 
-    plot_filename = "plots/{}-{}.png".format("-".join(['trpo', 'qpropc', 'qpropceta']), 'all')[:256]
-    plt.savefig(plot_filename)
+    plot_filename = "plots/{}-{}-mini.pdf".format("-".join(['trpo', 'qpropc', 'qpropceta']), 'all')[:256]
+    plt.savefig(plot_filename, bbox_inches='tight', dpi=200, format='pdf')
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description="Plot average rewards of experiments.")
