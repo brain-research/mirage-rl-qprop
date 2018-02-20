@@ -48,6 +48,7 @@ class BatchPolopt(RLAlgorithm, Poleval):
             qf=None,
             qf_updates_ratio=1,
             qprop_eta_option='ones',
+            qprop_unbias=False,
             qprop_nu=0,
             save_freq=0,
             restore_auto=True,
@@ -105,6 +106,7 @@ class BatchPolopt(RLAlgorithm, Poleval):
             self.qf_updates_ratio = qf_updates_ratio
             self.qprop_nu = qprop_nu
             self.qprop_eta_option = qprop_eta_option
+            self.qprop_unbias = qprop_unbias
             self.policy_sample_last = policy_sample_last
 
             self.ac_delta = ac_delta

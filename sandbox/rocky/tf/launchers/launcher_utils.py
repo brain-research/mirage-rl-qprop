@@ -66,6 +66,7 @@ flags.DEFINE_float('qf_mc_ratio', 0, 'Ratio of MC regression objective for fitti
 flags.DEFINE_float('qf_residual_phi', 0, 'Phi interpolating direct method and residual gradient method.')
 
 # qprop params
+flags.DEFINE_boolean('qprop_unbias', False, 'Unbias the estimator by dividing control variate by eta.')
 flags.DEFINE_string('qprop_eta_option', 'adapt1', 'Eta multiplier for adaptive control variate.')
 flags.DEFINE_float('qprop_nu', 0, 'Nu in interpolated policy gradient with control variate.')
 
@@ -103,6 +104,7 @@ qf_keys = [
 ]
 
 qprop_keys = [
+	'qprop_unbias',
         'qprop_eta_option',
         'sample_backups',
         'policy_sample_last',
