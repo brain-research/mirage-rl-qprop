@@ -5,17 +5,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
 import matplotlib.patches as mpatches
-
-from matplotlib import rc
-# rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
-## for Palatino and other serif fonts use:
-#rc('font',**{'family':'serif','serif':['Palatino']})
-rc('text', usetex=True)
-
-import seaborn as sns
-color_list = sns.color_palette("muted")
-sns.palplot(color_list)
-
 import argparse
 import glob
 
@@ -24,9 +13,17 @@ import seaborn as sns
 import scipy
 from scipy.signal import savgol_filter
 
+from matplotlib import rc
+rc('text', usetex=True)
+
+import seaborn as sns
+color_list = sns.color_palette("muted")
+sns.palplot(color_list)
+
+
 def main(args):
     # Plot average rewards
-    experiments_list = args.split('|')
+    experiments_list = args.files.split('|')
     fig = plt.figure(figsize=(20, 6))
     eps_list = [24, 1000, 1000]
 
@@ -115,32 +112,39 @@ def main(args):
 
             plt.xlabel('Steps (thousands)', fontsize=14)
             plt.ylabel('Average Reward', fontsize=14)
-        plt.legend(loc='lower right', prop={'size': 15}) # Comment this line if you want the un-mini plot.
+        if args.mini:
+            plt.legend(loc='lower right', prop={'size': 15})
 
 
-    # Uncomment all of these lines to produce the un-mini plot.
-    # green = mpatches.Patch(color=map_algos_colors['qpropconserv'], label='QProp (biased)')
-    # blue = mpatches.Patch(color=map_algos_colors['qpropconserveta'], label='QProp (unbiased)')
-    # purple = mpatches.Patch(color=map_algos_colors['trpo'], label='TRPO')
-    # leg = fig.legend(handles=[green, blue, purple], loc='lower center', ncol=3, prop={'size': 16})
-    # bb = leg.get_bbox_to_anchor().inverse_transformed(ax.transAxes)
-    # bb.y0 += -0.10 # Move legend down.
-    # leg.set_bbox_to_anchor(bb, transform = ax.transAxes)
+    if not args.mini:
+        green = mpatches.Patch(color=map_algos_colors['qpropconserv'], label='QProp (biased)')
+        blue = mpatches.Patch(color=map_algos_colors['qpropconserveta'], label='QProp (unbiased)')
+        purple = mpatches.Patch(color=map_algos_colors['trpo'], label='TRPO')
+        leg = fig.legend(handles=[green, blue, purple], loc='lower center', ncol=3, prop={'size': 16})
+
+        # Move legend down.
+        bb = leg.get_bbox_to_anchor().inverse_transformed(ax.transAxes)
+        bb.y0 += -0.10
+        leg.set_bbox_to_anchor(bb, transform = ax.transAxes)
 
 
     if not os.path.exists('plots/'):
         os.makedirs('plots/')
 
-    plot_filename = "plots/{}-{}-mini.pdf".format("-".join(['trpo', 'qpropc', 'qpropceta']), 'all')[:256]
+    if args.mini:
+        suffix = 'all-mini'
+    else:
+        suffix = 'all'
+
+    plot_filename = "plots/{}-{}.pdf".format("-".join(['trpo', 'qpropc', 'qpropceta']), suffix)[:256]
     plt.savefig(plot_filename, bbox_inches='tight', dpi=200, format='pdf')
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser(description="Plot average rewards of experiments.")
-    # parser.add_argument('--files', help="Pass in regex-style for filenames; split regexes by comma to capture different sets filenames; split regexes by | to capture different sets of experiments", required=True)
-    # args = parser.parse_args()
-    # Command:
-    # python plot_rewards.py --files=data/local/qpropconserv*cartpole*/*/progress.csv,data/local/trpo*cartpole*/*/progress.csv|data/local/qpropconserv*halfcheetah*/*/progress.csv,data/local/trpo*halfcheetah*/*/progress.csv|data/local/qpropconserv*humanoid*/*/progress.csv,data/local/trpo*humanoid*/*/progress.csv
+    default_fnames = 'data/local/qpropconserv*cartpole*/*/progress.csv,data/local/trpo*cartpole*/*/progress.csv|data/local/qpropconserv*halfcheetah*/*/progress.csv,data/local/trpo*halfcheetah*/*/progress.csv|data/local/qpropconserv*humanoid*/*/progress.csv,data/local/trpo*humanoid*/*/progress.csv'
 
-    args = 'data/local/qpropconserv*cartpole*/*/progress.csv,data/local/trpo*cartpole*/*/progress.csv|data/local/qpropconserv*halfcheetah*/*/progress.csv,data/local/trpo*halfcheetah*/*/progress.csv|data/local/qpropconserv*humanoid*/*/progress.csv,data/local/trpo*humanoid*/*/progress.csv'
-    # main(args.files)
+    parser = argparse.ArgumentParser(description="Plot average rewards of experiments.")
+    parser.add_argument('--files', type=str, default=default_fnames, metavar='S', help="Pass in regex-style for filenames; split regexes by comma to capture different sets filenames; split regexes by | to capture different sets of experiments", required=True)
+    parser.add_argument('--mini', action='store_true', help='generate the individual mini plots that can be cropped with legends')
+    args = parser.parse_args()
+
     main(args)
