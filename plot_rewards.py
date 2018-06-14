@@ -115,17 +115,16 @@ def main(args):
 
             plt.xlabel('Steps (thousands)', fontsize=14)
             plt.ylabel('Average Reward', fontsize=14)
-        plt.legend(loc='lower right', prop={'size': 15})
+        plt.legend(loc='lower right', prop={'size': 15}) # Comment this line if you want the un-mini plot.
+
 
     # Uncomment all of these lines to produce the un-mini plot.
     # green = mpatches.Patch(color=map_algos_colors['qpropconserv'], label='QProp (biased)')
     # blue = mpatches.Patch(color=map_algos_colors['qpropconserveta'], label='QProp (unbiased)')
     # purple = mpatches.Patch(color=map_algos_colors['trpo'], label='TRPO')
     # leg = fig.legend(handles=[green, blue, purple], loc='lower center', ncol=3, prop={'size': 16})
-
-    # Move legend down.
     # bb = leg.get_bbox_to_anchor().inverse_transformed(ax.transAxes)
-    # bb.y0 += -0.10
+    # bb.y0 += -0.10 # Move legend down.
     # leg.set_bbox_to_anchor(bb, transform = ax.transAxes)
 
 
